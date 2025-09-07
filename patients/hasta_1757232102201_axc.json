@@ -19,11 +19,11 @@
       "tarifKartlar": [],
       "tarifler": [],
       "gptMesaj": "asd",
-      "kilitli": true
+      "kilitli": false
     }
   ],
   "olusturmaTarihi": "2025-09-07T08:01:42.201Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T08:31:22.632Z",
+  "sonGuncelleme": "2025-09-07T08:31:30.926Z",
   "githubKaydedildi": true
 }
