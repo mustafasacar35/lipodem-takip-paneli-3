@@ -18,44 +18,20 @@
         {
           "tarifAdi": "keten tohumu ekmeği",
           "kartResmi": "keten_tohumu_ekmegi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/keten_tohumu_ekmegi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/keten_tohumu_ekmegi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "kıymalı kabak / kıymalı taze fasulye",
           "kartResmi": "kiymali_taze_fasulye.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kiymali_taze_fasulye.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/kiymali_taze_fasulye.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "patlıcan kebabı",
           "kartResmi": "patlican_kebabi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/patlican_kebabi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/patlican_kebabi.jpg",
           "eslesmeTuru": "tam eşleşme"
-        },
-        {
-          "tarifAdi": "urfa / adana kebap 200 gram ( 1 porsiyon)",
-          "kartResmi": "adana_urfa_kebap.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/adana_urfa_kebap.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "köfte",
-          "kartResmi": "keto_kofte.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/keto_kofte.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "kuzu ya da tavuk güveç",
-          "kartResmi": "kuzu_guvec.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kuzu_guvec.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "kuzu ya da tavuk güveç",
-          "kartResmi": "tavuk_guvec.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/tavuk_guvec.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
         }
       ],
       "tarifler": [
@@ -148,18 +124,15 @@
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir"
       ],
       "gptMesaj": "Figen Hanım merhaba,\n\nÖncelikle bu haftayı nasıl geçirdiğinizi merak ediyorum. Beslenme düzenine yeniden başlamak çoğu zaman kolay olmuyor ama ilk haftanın, bu yeni sürece uyum sağlamak için önemli bir eşik olduğunu biliyoruz. Bu hafta bize yaşadığınız deneyimleri kısaca yazarsanız, birlikte daha sağlam ilerleyebiliriz.\n\nPazartesi günü ikinci haftamıza başlıyoruz. İlk hafta inflamasyonu düşürmeye ve sindirim sistemine alan açmaya odaklandık. Bu haftaysa düzen biraz daha oturdu ve yapıyı biraz daha çeşitlendirdik. Keten tohumu ekmeğini bu hafta menünün merkezine aldık. Lif desteğini artırmak ve bağırsak hareketlerini desteklemek için önemli bir seçim oldu. Aynı zamanda omega-3 içeriğiyle dolaşım sistemine de destek sağlıyor.\n\nProtein kaynaklarını biraz daha çeşitlendirdik. Balık, tavuk, kırmızı et ve hindi gibi farklı kaynaklar sayesinde hem B12 hem de demir gibi mikrobesinleri dengelemeye çalıştık. Özellikle kırmızı et, kolajen sentezi açısından da faydalı olduğu için bu hafta birkaç akşam öğününe ekledik. Haşlanmış yumurta, omlet, mantarlı yumurta gibi öğle seçenekleriyle de D vitamini ve selenyum ihtiyacınızı karşılamayı sürdürdük.\n\nYeşillik, semizotu, domates, biber gibi sebzeleri her gün farklı formlarda ekledik. Bu sebzeler hem ödem çözücü potasyum açısından zengin hem de bağırsak florasını besleyen lifler içeriyor. Tabağınızda her gün bir parça renk, bir tutam tazelik olsun istedik.\n\nBu hafta öğünlerdeki sağlıklı yağlar yine zeytin, ceviz, çiğ badem ve avokado üzerinden devam ediyor. Bunlar hem tokluk hissini uzatıyor hem de lipödemli dokuda sık gördüğümüz sertlik hissinin zamanla azalmasına yardımcı oluyor.\n\nKollajen takviyesiyle cilt altı bağ dokusunu desteklemeye devam ediyoruz. Özellikle kilo kaybı başladığında oluşabilecek gevşemeleri önlemek için bu destek çok önemli.\n\nBir hatırlatma yapmak isterim: Bu sürecin amacı hızlı kilo vermek değil. Hedefimiz, dokularda toparlanma ve sistemin içeriden güçlenmesi. Yani bu haftalarda minik gibi görünen ama sürdürülebilir adımlar atıyoruz. Bunlar zamanla sizin için yeni bir yaşam tarzına dönüşebilir. Sabah kahvesinden yürüyüşünüze, su içme alışkanlığından tabağınızdaki yeşilliğe kadar her küçük detayın bir karşılığı var.\n\nHer zaman olduğu gibi bize ulaşabilirsiniz. Gözlemlerinizi ve yorumlarınızı da merak ediyorum.",
-      "githubLink": "https://github.com/mustafasacar35/lipodem-takip-paneli/blob/main/patients/hasta_fi_gen_tezman_fi_gen_tezman.json",
-      "githubRawLink": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli/main/patients/hasta_fi_gen_tezman_fi_gen_tezman.json",
+      "githubLink": "https://github.com/mustafasacar35/lipodem-takip-paneli-2/blob/main/patients/hasta_fi_gen_tezman_fi_gen_tezman.json",
+      "githubRawLink": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-2/main/patients/hasta_fi_gen_tezman_fi_gen_tezman.json",
       "eslesenTarifler": [
         "keten tohumu ekmeği",
         "kıymalı kabak / kıymalı taze fasulye",
         "keten tohumu ekmeği",
         "keten tohumu ekmeği",
         "patlıcan kebabı",
-        "urfa / adana kebap 200 gram ( 1 porsiyon)",
-        "köfte",
-        "keten tohumu ekmeği",
-        "kuzu ya da tavuk güveç"
+        "keten tohumu ekmeği"
       ],
       "pdfFile": {},
       "manuelKartlar": [],
@@ -220,6 +193,7 @@
         "zeytin (5 adet)",
         "ceviz (3 adet)",
         "akşam (tercihen hava kararınca)",
+        "urfa / adana kebap 200 gram ( 1 porsiyon)",
         "mevsim yeşillikleri (dereotu, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)",
         "bitter çikolata (2 kare)",
         "cumartesi̇",
@@ -230,6 +204,7 @@
         "ceviz (5 adet)",
         "mevsim yeşillikleri ( maydanoz, marul, roka, dereotu vs. + sirke, limon ve 1 yemek kaşığı zeytinyağı ile)",
         "akşam (tercihen hava kararınca)",
+        "köfte",
         "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)",
         "toz kollajen 1 ölçek",
         "pazar",
@@ -240,6 +215,7 @@
         "mevsim yeşillikleri (4-5 dal dereotu,4-5 yaprak marul,4-5 dal maydanoz + 1 adet küçük boy salatalık + 1 dilim limon +1",
         "keten tohumu ekmeği",
         "akşam (tercihen hava kararınca)",
+        "kuzu ya da tavuk güveç",
         "yeşil salata + 1 yemek kaşığı zeytinyağı ile",
         "toz kollajen 1 ölçek",
         "ara öğün (tercihen saat 15:00-16:00 civarında): maden suyu (2 çimdik kaya tuzu ve limon 5-10 damla limon sıkılmış şekilde)",
@@ -262,69 +238,33 @@
       "kayitTarihi": "2025-08-22T05:28:34.401Z",
       "tarifKartlar": [
         {
-          "tarifAdi": "badem unu ekmeği (1 dilim)",
-          "kartResmi": "badem_unlu_ekmek.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/badem_unlu_ekmek.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
           "tarifAdi": "patlıcan salatalı tavuk şiş",
           "kartResmi": "patlican_salatali_tavuk_sis.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/patlican_salatali_tavuk_sis.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/patlican_salatali_tavuk_sis.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "badem unlu kabak ve peynirli poğaça",
           "kartResmi": "badem_unlu_dere_otlu_pogaca.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/badem_unlu_dere_otlu_pogaca.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/badem_unlu_dere_otlu_pogaca.jpg",
           "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "badem unlu kabak ve peynirli poğaça",
           "kartResmi": "peynirli_kabakli_pogaca.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/peynirli_kabakli_pogaca.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "ispanaklı ya da pazılı tavuk dolması",
-          "kartResmi": "ispanakli_tavuk_dolmasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/ispanakli_tavuk_dolmasi.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "kıymalı patlıcan / kabak / bamya yemeği(100 gr kıyma ile)",
-          "kartResmi": "kiymali_bamya_sote.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kiymali_bamya_sote.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "kıymalı patlıcan / kabak / bamya yemeği(100 gr kıyma ile)",
-          "kartResmi": "kiymali_kabak_yemegi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kiymali_kabak_yemegi.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "kıymalı patlıcan / kabak / bamya yemeği(100 gr kıyma ile)",
-          "kartResmi": "patlican_musakka.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/patlican_musakka.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
-          "tarifAdi": "somonlu roka ve avokado salatası",
-          "kartResmi": "somonlu_roka_ve_avokado_salatasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/somonlu_roka_ve_avokado_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/peynirli_kabakli_pogaca.jpg",
           "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "sulu köfte",
           "kartResmi": "sulu_kofte.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/sulu_kofte.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/sulu_kofte.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "cevizli kaşık salatası",
           "kartResmi": "cevizli_kasik_salatasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/cevizli_kasik_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/cevizli_kasik_salatasi.jpg",
           "eslesmeTuru": "tam eşleşme"
         }
       ],
@@ -426,19 +366,9 @@
       "pdfFile": {},
       "manuelKartlar": [],
       "eslesenTarifler": [
-        "badem unu ekmeği (1 dilim)",
         "patlıcan salatalı tavuk şiş",
         "badem unlu kabak ve peynirli poğaça",
-        "ispanaklı ya da pazılı tavuk dolması",
-        "badem unu ekmeği (1 dilim)",
-        "badem unu ekmeği (1 dilim)",
-        "kıymalı patlıcan / kabak / bamya yemeği(100 gr kıyma ile)",
-        "badem unu ekmeği (1 dilim)",
         "badem unlu kabak ve peynirli poğaça",
-        "somonlu roka ve avokado salatası",
-        "badem unu ekmeği (1 dilim)",
-        "badem unu ekmeği (1 dilim)",
-        "badem unu ekmeği (1 dilim)",
         "sulu köfte",
         "cevizli kaşık salatası"
       ],
@@ -452,6 +382,7 @@
         "öğle (tercihen saat 12:00 civarında)",
         "haşlanmış yumurta ya da sahanda (2 yumurta - 1 tatlı kaşığı tereyağı)",
         "tulum / kaşar peyniri (30 gram)",
+        "badem unu ekmeği (1 dilim)",
         "mevsim yeşillikleri (dereotu, roka, maydanoz, marul sirke+limon ile)",
         "zeytin (5 adet)",
         "çiğ badem (10 adet)",
@@ -465,6 +396,7 @@
         "zeytin (5 adet)",
         "mevsim yeşillikleri (dereotu, roka, maydanoz, marul sirke+limon ile)",
         "akşam (tercihen hava kararınca)",
+        "ispanaklı ya da pazılı tavuk dolması",
         "mevsim salata (1 tatlı kaşığı zeytinyağı ile)",
         "badem unu ekmeği (1 dilim)",
         "çarşamba",
@@ -475,6 +407,7 @@
         "ceviz (3 adet)",
         "badem unu ekmeği (1 dilim)",
         "akşam (tercihen hava kararınca)",
+        "kıymalı patlıcan / kabak / bamya yemeği(100 gr kıyma ile)",
         "badem unu ekmeği (1 dilim)",
         "borani (yoğurtlu ıspanak)",
         "kollajen (1 ölçek 10 gram)",
@@ -487,6 +420,7 @@
         "çiğ badem (10 adet)",
         "bitter çikolata (2 kare)",
         "akşam (tercihen hava kararınca)",
+        "somonlu roka ve avokado salatası",
         "kabak çekirdeği (1 avuç)",
         "cuma",
         "öğle (tercihen saat 12:00 civarında)",
@@ -542,75 +476,57 @@
       "kayitTarihi": "2025-08-29T06:06:41.527Z",
       "tarifKartlar": [
         {
-          "tarifAdi": "avokadolu omlet",
-          "kartResmi": "avokado_omleti.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/avokado_omleti.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
           "tarifAdi": "mantarlı tavuk sote",
           "kartResmi": "mantarli_tavuk_sote.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/mantarli_tavuk_sote.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/mantarli_tavuk_sote.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "lupin unlu poğaça (veya 3 adet lorlu poğaça)",
           "kartResmi": "lupin_unlu_pogaca.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/lupin_unlu_pogaca.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/lupin_unlu_pogaca.jpg",
           "eslesmeTuru": "tam eşleşme"
-        },
-        {
-          "tarifAdi": "köfte",
-          "kartResmi": "keto_kofte.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/keto_kofte.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
           "kartResmi": "kabak_sote.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kabak_sote.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/kabak_sote.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "haşhaş ezmesi ekmeği (1 dilim)",
           "kartResmi": "hashas_ezmesi_ekmegi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/hashas_ezmesi_ekmegi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/hashas_ezmesi_ekmegi.jpg",
           "eslesmeTuru": "tam eşleşme"
-        },
-        {
-          "tarifAdi": "fırında sebzeli peynirli güveç",
-          "kartResmi": "firinda_sebzeli_peynirli_guvec.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/firinda_sebzeli_peynirli_guvec.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "göçmen salatası",
           "kartResmi": "gocmen_salatasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/gocmen_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/gocmen_salatasi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "patlıcan kebabı",
           "kartResmi": "patlican_kebabi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/patlican_kebabi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/patlican_kebabi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "kıymalı patlıcan kapama",
           "kartResmi": "kiymali_patlican_kapama.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/kiymali_patlican_kapama.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/kiymali_patlican_kapama.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "ketojeni̇k pi̇zza",
           "kartResmi": "ketojenik_pizza.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/ketojenik_pizza.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/ketojenik_pizza.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "tavuklu kabak noodle",
           "kartResmi": "tavuklu_kabak_noodle.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/tavuklu_kabak_noodle.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/tavuklu_kabak_noodle.jpg",
           "eslesmeTuru": "tam eşleşme"
         }
       ],
@@ -714,13 +630,10 @@
       "pdfFile": {},
       "manuelKartlar": [],
       "eslesenTarifler": [
-        "avokadolu omlet",
         "mantarlı tavuk sote",
         "lupin unlu poğaça (veya 3 adet lorlu poğaça)",
-        "köfte",
         "kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
         "haşhaş ezmesi ekmeği (1 dilim)",
-        "fırında sebzeli peynirli güveç",
         "göçmen salatası",
         "haşhaş ezmesi ekmeği (1 dilim)",
         "haşhaş ezmesi ekmeği (1 dilim)",
@@ -738,6 +651,7 @@
         "hafta",
         "pazartesi̇",
         "öğle (tercihen saat 12:00 civarında)",
+        "avokadolu omlet",
         "yeşillikler (dereotu, roka, limon, sirke ve 1 yemek kaşığı zeytinyağı ile)",
         "tulum / kaşar peyniri (30 gram)",
         "zeytin (10 adet)",
@@ -754,6 +668,7 @@
         "zeytin (5 adet)",
         "ceviz (3 adet )",
         "akşam (tercihen hava kararınca)",
+        "köfte",
         "çiğ badem (10 adet)",
         "kollajen (1 ölçek 10 gram)",
         "çarşamba",
@@ -765,6 +680,7 @@
         "zeytin (10 adet)",
         "çiğ badem (10 adet)",
         "akşam (tercihen hava kararınca)",
+        "fırında sebzeli peynirli güveç",
         "haşhaş ezmesi ekmeği (1 dilim)",
         "ev yapımı turşu",
         "kollajen (1 ölçek 10 gram)",
@@ -831,61 +747,55 @@
         {
           "tarifAdi": "bonfile steak",
           "kartResmi": "bonfile_steak.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/bonfile_steak.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/bonfile_steak.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "peynirli biber dolması",
           "kartResmi": "peynirli_biber_dolmasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/peynirli_biber_dolmasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/peynirli_biber_dolmasi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "haşhaş ezmesi ekmeği (1 dilim)",
           "kartResmi": "hashas_ezmesi_ekmegi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/hashas_ezmesi_ekmegi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/hashas_ezmesi_ekmegi.jpg",
           "eslesmeTuru": "tam eşleşme"
-        },
-        {
-          "tarifAdi": "köfte",
-          "kartResmi": "keto_kofte.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/keto_kofte.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "göçmen salatası",
           "kartResmi": "gocmen_salatasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/gocmen_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/gocmen_salatasi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "cevizli kaşık salatası",
           "kartResmi": "cevizli_kasik_salatasi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/cevizli_kasik_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/cevizli_kasik_salatasi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "lupin unlu poğaça (veya 3 adet lorlu poğaça)",
           "kartResmi": "lupin_unlu_pogaca.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/lupin_unlu_pogaca.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/lupin_unlu_pogaca.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "yoğurtlu salatalık mezesi",
           "kartResmi": "yogurtlu_salatalik_mezesi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/yogurtlu_salatalik_mezesi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/yogurtlu_salatalik_mezesi.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "yumurtalı ıspanak / pazı kavurma",
           "kartResmi": "yumurtali_ispanak.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/yumurtali_ispanak.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/yumurtali_ispanak.jpg",
           "eslesmeTuru": "tam eşleşme"
         },
         {
           "tarifAdi": "alinazik kebabı",
           "kartResmi": "alinazik_kebabi.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli/tarifler/alinazik_kebabi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/alinazik_kebabi.jpg",
           "eslesmeTuru": "tam eşleşme"
         }
       ],
@@ -979,14 +889,13 @@
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir"
       ],
       "gptMesaj": "Figen Hanım merhaba,\n\nDördüncü haftayı da tamamladık. Artık sistem daha oturduğu, bedenin bu düzene alıştığı bir noktadayız. Beşinci haftayla birlikte programımıza yepyeni bir destek daha ekliyoruz: manuel lenf drenaj (MLD) masajı.\n\nBeslenme bu sürecin temel taşı olsa da, lipödem gibi kronik inflamasyonla seyreden bir hastalıkta masaj gibi destekleyici uygulamaların yeri çok büyük. Vücudumuzda hem yüzeyel hem de derin lenf kanalları bulunur. İlk dört haftalık beslenme düzeniyle özellikle inflamatuar sıvı yükünün bir kısmını çözümledik. Şimdi, bu gevşeyen dokulardan toksinlerin, sıvıların ve istenmeyen yağ partiküllerinin atılmasını kolaylaştırmak için bu iki sistemi birlikte çalıştırmaya başlıyoruz.\n\nLenf drenaj masajı, bu açıdan tam zamanında eklenmiş oldu. Masajla birlikte artık sadece yüzeydeki ödem değil, daha derin dokularda biriken ve zamanla sertleşen bölgelerdeki yük de hareketlenmeye başlayacak. Vücut bu sayede kendini daha hafif hissedebilir, cilt görünümünde toparlanma başlayabilir ve karaciğer, böbrek gibi detoks sistemleri de daha etkili çalışmaya başlar.\n\nBu hafta için hazırladığımız listenin içeriği de bu mekanizmayı destekleyecek şekilde oluşturuldu. Yumurta, et, balık ve peynir gibi hayvansal protein kaynaklarını dengeli şekilde yerleştirdik. Proteinler, hem bağ dokusunun onarımı hem de bağışıklık sisteminin düzenlenmesi açısından önemli bir görev üstleniyor. Her günün sonunda verdiğimiz kollajen desteğiyle de cilt altı yapıların toparlanmasına destek olmaya devam ediyoruz.\n\nSalatalarda yer verdiğimiz semizotu, roka, tere, kırmızı lahana gibi sebzeler hem ödem çözücü potasyum içerikleriyle hem de lif ve C vitamini desteğiyle önemli bir rol üstleniyor. Kabak çekirdeği, ceviz, fındık gibi yağlı tohumlar da hem çinko, magnezyum gibi mikrobesinleri sağlıyor hem de hormon dengesini destekliyor.\n\nBu hafta birkaç öğünde yoğurtlu tarifler, turşu gibi fermente besinler ve tahin gibi sağlıklı yağlara da yer verdik. Bağırsak ve bağışıklık sistemi arasındaki ilişki lipödemli bireylerde daha da önemli hâle geliyor. Bu yüzden bu öğünlerdeki küçük eklemeleri sadece bir “yan lezzet” gibi değil, sistemin parçası olarak düşündük.\n\nHer zaman olduğu gibi bize ulaşabilirsiniz. Gözlemlerinizi ve yorumlarınızı da merak ediyorum.",
-      "kilitli": true,
+      "kilitli": false,
       "pdfFile": {},
       "manuelKartlar": [],
       "eslesenTarifler": [
         "bonfile steak",
         "peynirli biber dolması",
         "haşhaş ezmesi ekmeği (1 dilim)",
-        "köfte",
         "göçmen salatası",
         "haşhaş ezmesi ekmeği (1 dilim)",
         "cevizli kaşık salatası",
@@ -1042,6 +951,7 @@
         "salatalık (orta boy) ,cherry domates (2 adet), 4-5 dal roka, 4-5 dal tere, 2 adet küçük yeşil biber",
         "ceviz (3 adet)",
         "akşam (tercihen hava kararınca)",
+        "köfte",
         "cuma",
         "öğle (tercihen saat 12:00 civarında)",
         "sahanda yumurta (1 yumurta – 1 yemek kaşığı tereyağı)",
@@ -1077,6 +987,6 @@
       ]
     }
   ],
-  "sonGuncelleme": "2025-09-04T14:19:17.222Z",
+  "sonGuncelleme": "2025-09-07T10:31:06.159Z",
   "githubKaydedildi": true
 }
