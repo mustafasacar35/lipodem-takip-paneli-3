@@ -302,10 +302,27 @@
         "yeşillikler için sevdiklerinizle değiştirebilirsiniz.",
         "haşhaş ezmesi ekmeği yerine 1 adet yumurta, 3 adet ceviz ya da 10 adet çiğ badem ekleyebilirsiniz."
       ]
+    },
+    {
+      "haftaNo": 2,
+      "baslangic": "2025-09-07",
+      "bitis": "2025-09-13",
+      "aciklama": "",
+      "pdf": null,
+      "pdfName": null,
+      "pdfOrijinalIsim": null,
+      "pdfYolu": null,
+      "githubUrl": null,
+      "indirmeUrl": null,
+      "kayitTarihi": null,
+      "tarifKartlar": [],
+      "tarifler": [],
+      "gptMesaj": "",
+      "kilitli": false
     }
   ],
   "olusturmaTarihi": "2025-09-03T09:45:53.290Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T21:32:54.780Z",
+  "sonGuncelleme": "2025-09-07T21:33:32.220Z",
   "githubKaydedildi": true
 }
