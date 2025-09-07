@@ -3,9 +3,29 @@
   "isim": "scd",
   "not": "",
   "arsiv": false,
-  "haftalar": [],
+  "haftalar": [
+    {
+      "haftaNo": 2,
+      "baslangic": "2025-08-13",
+      "bitis": "2025-08-24",
+      "aciklama": "",
+      "pdf": null,
+      "pdfName": "BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
+      "pdfOrijinalIsim": "BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
+      "pdfYolu": "pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
+      "githubUrl": "https://github.com/mustafasacar35/lipodem-takip-paneli-2/blob/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
+      "indirmeUrl": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-2/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
+      "kayitTarihi": "2025-09-07T08:06:29.192Z",
+      "tarifKartlar": [],
+      "tarifler": [],
+      "gptMesaj": "",
+      "kilitli": false,
+      "pdfFile": {},
+      "manuelKartlar": []
+    }
+  ],
   "olusturmaTarihi": "2025-09-07T08:06:09.338Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T08:06:09.338Z",
+  "sonGuncelleme": "2025-09-07T08:06:29.192Z",
   "githubKaydedildi": true
 }
