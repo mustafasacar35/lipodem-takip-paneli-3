@@ -15,15 +15,15 @@
       "pdfYolu": null,
       "githubUrl": null,
       "indirmeUrl": null,
-      "kayitTarihi": "2025-09-07T08:02:03.598Z",
+      "kayitTarihi": "2025-09-07T08:05:20.617Z",
       "tarifKartlar": [],
       "tarifler": [],
-      "gptMesaj": "",
-      "kilitli": false
+      "gptMesaj": "asd",
+      "kilitli": true
     }
   ],
   "olusturmaTarihi": "2025-09-07T08:01:42.201Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T08:05:10.811Z",
+  "sonGuncelleme": "2025-09-07T08:05:20.620Z",
   "githubKaydedildi": true
 }
