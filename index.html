@@ -6590,24 +6590,53 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
       
       let startDate = null;
       if (seciliHasta.haftalar.length > 0) {
-        // ⚡ ÖNEMLİ: Haftaları sıralanmış listeden al (en güncel tarihleri için)
+        // ⚡ ÖNEMLİ: En büyük hafta numarasına sahip haftayı bul (tarih sırası değil!)
         const haftaListesi = getHaftaListesi();
-        const last = haftaListesi[haftaListesi.length-1];
         
-        console.log('📅 Son hafta bilgisi (haftaEkle):', {
-          haftaNo: last.haftaNo,
-          baslangic: last.baslangic,
-          bitis: last.bitis
+        let enBuyukHaftaNoHafta = haftaListesi[0];
+        let enBuyukHaftaNo = enBuyukHaftaNoHafta.haftaNo || 1;
+        
+        // En büyük hafta numarasını bul
+        haftaListesi.forEach(hafta => {
+          const haftaNo = hafta.haftaNo || 1;
+          if (haftaNo > enBuyukHaftaNo) {
+            enBuyukHaftaNo = haftaNo;
+            enBuyukHaftaNoHafta = hafta;
+          }
         });
         
+        console.log('📅 En büyük hafta numarası:', enBuyukHaftaNo, 'Tarihi:', enBuyukHaftaNoHafta.baslangic, '-', enBuyukHaftaNoHafta.bitis);
+        
+        // ⚡ ÇÖZÜM: Tab'da görünen tarihi hesapla (PDF'den gelen özel format vs. dikkate al)
+        let tabGoruntulenenBitisTarihi = null;
+        
+        // Özel tab formatı kontrolü
+        if (enBuyukHaftaNoHafta.ozelTabFormat && enBuyukHaftaNoHafta.tabTarih) {
+          // PDF'den gelen uzun tarih aralığı için özel format - son tarihi çıkar
+          const tabTarih = enBuyukHaftaNoHafta.tabTarih;
+          const tarihParcalari = tabTarih.split(' - ');
+          if (tarihParcalari.length === 2) {
+            const bitisParcasi = tarihParcalari[1].trim();
+            // MM/DD formatından yıl ekle
+            const [ay, gun] = bitisParcasi.split('/');
+            const yil = new Date().getFullYear();
+            tabGoruntulenenBitisTarihi = `${yil}-${ay.padStart(2, '0')}-${gun.padStart(2, '0')}`;
+          }
+        } else {
+          // Normal hafta verisi - bitiş tarihini al
+          tabGoruntulenenBitisTarihi = enBuyukHaftaNoHafta.bitis;
+        }
+        
+        console.log('📅 Tab\'da görünen bitiş tarihi:', tabGoruntulenenBitisTarihi);
+        
         try {
-          if (last.bitis) {
-            // ⚡ ÖNEMLİ: Son haftanın BİTİŞ tarihinden 1 gün sonra başla
-            const sonHaftaBitis = new Date(last.bitis);
-            startDate = new Date(sonHaftaBitis.getTime() + 1*24*60*60*1000);
-            console.log('📅 Yeni hafta başlangıcı hesaplandı:', startDate.toISOString().slice(0,10));
+          if (tabGoruntulenenBitisTarihi) {
+            // ⚡ ÖNEMLİ: Tab'da görünen bitiş tarihinden 1 gün sonra başla
+            const tabBitis = new Date(tabGoruntulenenBitisTarihi + 'T00:00:00');
+            startDate = new Date(tabBitis.getTime() + 1*24*60*60*1000);
+            console.log('📅 Tab bitiş tarihinden yeni hafta başlangıcı hesaplandı:', startDate.toISOString().slice(0,10));
           } else {
-            throw new Error('Bitiş tarihi yok');
+            throw new Error('Tab bitiş tarihi bulunamadı');
           }
           
           // Tarih geçerli mi kontrol et
@@ -6635,12 +6664,14 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
         startDate = new Date(); // En son çare olarak bugün
       }
       
-      const endDate = new Date(startDate.getTime() + 6*24*60*60*1000);
+      // Varsayılan olarak 7 gün (1 hafta) süreli yap
+      const endDate = new Date(startDate.getTime() + 6*24*60*60*1000); // 6 gün ekle (toplam 7 gün)
       
       console.log('📅 Yeni hafta tarihleri hesaplandı:', {
         haftaNo: sonrakiHaftaNo,
         startDate: startDate.toISOString().slice(0,10),
-        endDate: endDate.toISOString().slice(0,10)
+        endDate: endDate.toISOString().slice(0,10),
+        gunSayisi: Math.round((endDate - startDate) / (24*60*60*1000)) + 1
       });
       
       seciliHasta.haftalar.push({
@@ -6920,24 +6951,35 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
         const baslangicTarih = hafta.baslangic || '';
         const bitisTarih = hafta.bitis || '';
         let tarihGosterim = '';
+        let detayTarihGosterim = '';
         
         // Özel tab formatı kontrolü
         if (hafta.ozelTabFormat && hafta.tabBaslik && hafta.tabTarih) {
           // PDF'den gelen uzun tarih aralığı için özel format
           tarihGosterim = hafta.tabTarih;
+          detayTarihGosterim = hafta.tabTarih; // Detay için de aynı format
         } else if (baslangicTarih && bitisTarih) {
           try {
-            const basParts = baslangicTarih.split('-');
-            const bitParts = bitisTarih.split('-');
-            if (basParts.length === 3 && bitParts.length === 3) {
-              tarihGosterim = `${basParts[1]}/${basParts[2]} - ${bitParts[1]}/${bitParts[2]}`;
+            // Tarihleri parse et ve doğru formatta göster
+            const basDate = new Date(baslangicTarih);
+            const bitDate = new Date(bitisTarih);
+            
+            if (!isNaN(basDate.getTime()) && !isNaN(bitDate.getTime())) {
+              const basAy = String(basDate.getMonth() + 1).padStart(2, '0');
+              const basGun = String(basDate.getDate()).padStart(2, '0');
+              const bitAy = String(bitDate.getMonth() + 1).padStart(2, '0');
+              const bitGun = String(bitDate.getDate()).padStart(2, '0');
+              tarihGosterim = `${basAy}/${basGun} - ${bitAy}/${bitGun}`;
+              detayTarihGosterim = `${basDate.getFullYear()}-${basAy}-${basGun} - ${bitDate.getFullYear()}-${bitAy}-${bitGun}`;
             }
           } catch (e) {
             console.warn('Tarih parse hatası:', e);
             tarihGosterim = 'Tarih belirtilmemiş';
+            detayTarihGosterim = 'Tarih belirtilmemiş';
           }
         } else {
           tarihGosterim = 'Tarih belirtilmemiş';
+          detayTarihGosterim = 'Tarih belirtilmemiş';
         }
         
         // Tab başlığını belirle
@@ -6975,7 +7017,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
                        style="display: none; width: 50px; font-weight: bold; text-align: center; border: 2px solid #007bff; border-radius: 4px; padding: 4px;"
                        onblur="saveHaftaNo(${i})" onkeypress="if(event.key==='Enter') saveHaftaNo(${i})">
               </div>
-              <span style="color: #666; font-size: 14px;">📅 ${hafta.baslangic} - ${hafta.bitis}</span>
+              <span style="color: #666; font-size: 14px;">📅 ${detayTarihGosterim}</span>
             </div>
             <div style="display: flex; gap: 5px;">
               ${!hafta.kilitli ? `
