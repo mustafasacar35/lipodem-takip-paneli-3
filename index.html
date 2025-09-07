@@ -5821,6 +5821,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
     async function hastaSecYeniSistem(hastaBilgi) {
       try {
         console.log('👤 Yeni sistemde hasta seçiliyor:', hastaBilgi.isim);
+        console.log('� GitHub\'dan hasta bilgileri alınıyor:', hastaBilgi.isim);
         
         const owner = 'mustafasacar35';
         const repo = 'lipodem-takip-paneli-2';
@@ -5845,7 +5846,9 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
         for (const dosyaAdi of benzersizDosyaAdlari) {
           try {
             console.log(`🔍 Denenen dosya: ${dosyaAdi}`);
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/patients/${dosyaAdi}`);
+            const token = document.getElementById('githubToken').value.trim();
+            const headers = token ? { 'Authorization': `token ${token}` } : {};
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/patients/${dosyaAdi}`, { headers });
             
             if (response.ok) {
               const data = await response.json();
