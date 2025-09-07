@@ -172,10 +172,27 @@
         "kıymalı ıspanak yemeği",
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem"
       ]
+    },
+    {
+      "haftaNo": 2,
+      "baslangic": "2025-08-24",
+      "bitis": "2025-08-30",
+      "aciklama": "",
+      "pdf": null,
+      "pdfName": null,
+      "pdfOrijinalIsim": null,
+      "pdfYolu": null,
+      "githubUrl": null,
+      "indirmeUrl": null,
+      "kayitTarihi": null,
+      "tarifKartlar": [],
+      "tarifler": [],
+      "gptMesaj": "",
+      "kilitli": false
     }
   ],
   "olusturmaTarihi": "2025-09-07T08:01:42.201Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T12:31:51.766Z",
+  "sonGuncelleme": "2025-09-07T12:31:53.097Z",
   "githubKaydedildi": true
 }
