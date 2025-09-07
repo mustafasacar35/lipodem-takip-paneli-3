@@ -6,8 +6,8 @@
   "haftalar": [
     {
       "haftaNo": 1,
-      "baslangic": "2025-08-13",
-      "bitis": "2025-08-24",
+      "baslangic": "2025-08-11",
+      "bitis": "2025-08-17",
       "aciklama": "",
       "pdf": null,
       "pdfName": "BENSU DANSIK 13-24 AĞUSTOS 1. HAFTA.pdf",
@@ -15,13 +15,19 @@
       "pdfYolu": "pdfs/BENSU DANSIK 13-24 AĞUSTOS 1. HAFTA.pdf",
       "githubUrl": "https://github.com/mustafasacar35/lipodem-takip-paneli-2/blob/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 1. HAFTA.pdf",
       "indirmeUrl": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-2/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 1. HAFTA.pdf",
-      "kayitTarihi": "2025-09-07T09:42:44.155Z",
+      "kayitTarihi": "2025-09-07T09:56:26.238Z",
       "tarifKartlar": [
         {
           "tarifAdi": "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
           "kartResmi": "hashas_ezmesi_ekmegi.jpg",
           "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/hashas_ezmesi_ekmegi.jpg",
           "eslesmeTuru": "tam eşleşme"
+        },
+        {
+          "tarifAdi": "köfte",
+          "kartResmi": "keto_kofte.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/keto_kofte.jpg",
+          "eslesmeTuru": "manuel eşleştirme"
         },
         {
           "tarifAdi": "tavuklu mantar sote (150 gr tavuk ya da hindi ile)",
@@ -147,7 +153,7 @@
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir"
       ],
       "gptMesaj": "asd",
-      "kilitli": false,
+      "kilitli": true,
       "ozelTabFormat": true,
       "tabBaslik": "1. Hafta",
       "tabTarih": "08/13 - 08/24",
@@ -155,6 +161,7 @@
       "manuelKartlar": [],
       "eslesenTarifler": [
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
+        "köfte",
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
         "tavuklu mantar sote (150 gr tavuk ya da hindi ile)",
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
@@ -178,7 +185,6 @@
         "mevsim yeşillikleri (dereotu, maydanoz, sirke,limon ve 1 yemek kaşığı zeytinyağı ile)",
         "zeytin (10 adet)",
         "akşam (tercihen hava kararınca)",
-        "köfte",
         "yeşil salata (marul, dereotu, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
         "fındık (20 adet)",
         "toz kollajen 1 ölçek",
@@ -272,6 +278,6 @@
   ],
   "olusturmaTarihi": "2025-09-07T08:01:42.201Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T09:52:26.284Z",
+  "sonGuncelleme": "2025-09-07T09:56:26.247Z",
   "githubKaydedildi": true
 }
