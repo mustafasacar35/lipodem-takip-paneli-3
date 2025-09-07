@@ -30,6 +30,36 @@
   </script>
   
   <style>
+    /* Kısa Mesaj Sistemi */
+    .toast-message {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 10000;
+      animation: slideIn 0.3s ease-out;
+    }
+    
+    .toast-message.error {
+      background: #dc3545;
+    }
+    
+    .toast-message.warning {
+      background: #ffc107;
+      color: #212529;
+    }
+    
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    
     body { 
       font-family: sans-serif; 
       margin: 0; 
@@ -975,6 +1005,29 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   <script>
+    // === TOAST MESAJ SİSTEMİ ===
+    function showToast(message, type = 'success', duration = 2500) {
+      // Mevcut toast'ları temizle
+      const existingToasts = document.querySelectorAll('.toast-message');
+      existingToasts.forEach(toast => toast.remove());
+      
+      // Yeni toast oluştur
+      const toast = document.createElement('div');
+      toast.className = `toast-message ${type}`;
+      toast.textContent = message;
+      
+      // Body'ye ekle
+      document.body.appendChild(toast);
+      
+      // Belirli süre sonra kaldır
+      setTimeout(() => {
+        if (toast.parentNode) {
+          toast.style.animation = 'slideIn 0.3s ease-out reverse';
+          setTimeout(() => toast.remove(), 300);
+        }
+      }, duration);
+    }
+    
     // ⚡ ÇOKLU PDF İŞLEME FONKSİYONU (Global)
     
     // Profesyonel PDF adını parse etme
@@ -6780,7 +6833,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
             </div>
             <div style="display: flex; gap: 5px;">
               ${!hafta.kilitli ? `
-                <button onclick="haftaKaydet(${i})" class="kayit-btn" style="padding: 5px 12px; font-size: 12px;">💾 Kaydet</button>
+                <button onclick="haftaKaydet(${i})" class="kayit-btn" style="padding: 5px 12px; font-size: 12px;">� Kilitle</button>
               ` : `
                 <button class="kayit-btn saved" style="padding: 5px 12px; font-size: 12px;">✅ Kaydedildi</button>
                 <button onclick="haftaKilidiAc(${i})" class="kilit-ac-btn" style="padding: 5px 10px; font-size: 11px;">🔓 Kilidi Aç</button>
@@ -6855,7 +6908,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
           
           <!-- GPT Mesajı - Grid'in Altında -->
           <div style="margin-bottom: 20px;" class="${hafta.kilitli ? 'locked-area' : ''}">
-            <h4 style="margin: 0 0 10px 0; color: #dc3545; font-size: 16px;">💬 GPT Mesajı</h4>
+            <h4 style="margin: 0 0 10px 0; color: #dc3545; font-size: 16px;">💬 ${haftaNo}. Haftanın Mesajı</h4>
             <textarea id="gptMesaj_${i}" rows="3" 
                       style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; resize: vertical;"
                       placeholder="Bu hafta için GPT mesajı veya not..."
@@ -6888,7 +6941,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
           
           <!-- GPT Mesajı - Full Width (Eski, Gizli) -->
           <div style="margin-bottom: 20px; display: none;">
-            <h4 style="margin: 0 0 10px 0; color: #dc3545; font-size: 16px;">💬 GPT Mesajı</h4>
+            <h4 style="margin: 0 0 10px 0; color: #dc3545; font-size: 16px;">💬 ${haftaNo}. Haftanın Mesajı</h4>
             <textarea id="gptMesaj_${i}" rows="3" 
                       style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ddd; resize: vertical;"
                       placeholder="Bu hafta için GPT mesajı veya not...">${hafta.gptMesaj||''}</textarea>
@@ -10273,7 +10326,7 @@ function duzenleHafta(i) {
         });
       }
       
-      alert('GPT mesajı kaydedildi.');
+      showToast('💾 Hafta mesajı kaydedildi!');
     }
     // --- JSON dışa aktar/yükle fonksiyonları ---
     function exportData() {
@@ -13521,18 +13574,21 @@ ${mesajlar.join('\n')}
     // Hafta kaydet ve kilitle
     async function haftaKaydet(haftaIndex) {
       if (!seciliHasta || !seciliHasta.haftalar[haftaIndex]) {
-        alert('❌ Geçersiz hafta!');
+        showToast('❌ Geçersiz hafta!', 'error');
         return;
       }
       
       const hafta = seciliHasta.haftalar[haftaIndex];
       const haftaNo = hafta.haftaNo || (haftaIndex + 1);
       
-      if (!confirm(`Bu haftayı kaydetmek ve kilitlemek istediğinize emin misiniz?\n\nHafta: ${haftaNo}\nTarih: ${hafta.baslangic} - ${hafta.bitis}\n\n⚠️ Kaydedildikten sonra PDF ve GPT alanları kilitlenicek!`)) {
-        return;
-      }
-      
       try {
+        // ÖNEMLİ: GPT mesajını kaydet (eğer textarea'da yazılı metin varsa ve henüz kaydedilmemişse)
+        const gptTextarea = document.getElementById('gptMesaj_' + haftaIndex);
+        if (gptTextarea && gptTextarea.value !== (hafta.gptMesaj || '')) {
+          console.log('📝 GPT mesajı hafta kilitleme sırasında otomatik kaydediliyor...');
+          hafta.gptMesaj = gptTextarea.value;
+        }
+        
         // Hafta verilerini kilitle
         hafta.kilitli = true;
         hafta.kayitTarihi = new Date().toISOString();
@@ -13550,7 +13606,7 @@ ${mesajlar.join('\n')}
           gosterHaftalar();
           
           // Başarı mesajı
-          alert(`✅ ${haftaNo}. hafta başarıyla kaydedildi!\n\nHafta artık kilitli. PDF ve GPT alanları korunuyor.\nKilidi açmak için 🔓 butonunu kullanın.`);
+          showToast(`🔒 ${haftaNo}. hafta kilitlendi!`);
           
         } else {
           // GitHub kaydetme başarısız
@@ -13558,7 +13614,7 @@ ${mesajlar.join('\n')}
           hafta.kayitTarihi = null;
           saveToStorage();
           
-          alert('❌ GitHub\'a kaydetme başarısız! Hafta kilitlenemedi.');
+          showToast('❌ GitHub\'a kaydetme başarısız!', 'error');
         }
         
       } catch (error) {
@@ -13569,23 +13625,19 @@ ${mesajlar.join('\n')}
         hafta.kayitTarihi = null;
         saveToStorage();
         
-        alert(`❌ Hafta kaydetme hatası: ${error.message}`);
+        showToast(`❌ Hafta kaydetme hatası: ${error.message}`, 'error');
       }
     }
     
     // Hafta kilidini aç
     async function haftaKilidiAc(haftaIndex) {
       if (!seciliHasta || !seciliHasta.haftalar[haftaIndex]) {
-        alert('❌ Geçersiz hafta!');
+        showToast('❌ Geçersiz hafta!', 'error');
         return;
       }
       
       const hafta = seciliHasta.haftalar[haftaIndex];
       const haftaNo = hafta.haftaNo || (haftaIndex + 1);
-      
-      if (!confirm(`${haftaNo}. hafta kilidini açmak istediğinize emin misiniz?\n\n⚠️ Kilidi açtıktan sonra PDF ve GPT alanlarını değiştirebilirsiniz.\nVerilerinizi yanlışlıkla kaybetmemek için dikkatli olun!`)) {
-        return;
-      }
       
       try {
         // Hafta kilidini aç
@@ -13604,14 +13656,14 @@ ${mesajlar.join('\n')}
           gosterHaftalar();
           
           // Başarı mesajı
-          alert(`🔓 ${haftaNo}. hafta kilidi açıldı!\n\nArtık PDF ve GPT alanlarını düzenleyebilirsiniz.\nİşlemlerinizi bitirdikten sonra tekrar kaydetmeyi unutmayın.`);
+          showToast(`🔓 ${haftaNo}. hafta kilidi açıldı!`);
           
         } else {
           // GitHub kaydetme başarısız
           hafta.kilitli = true; // Kilidi geri koy
           saveToStorage();
           
-          alert('❌ GitHub\'a kaydetme başarısız! Kilit açılamadı.');
+          showToast('❌ GitHub\'a kaydetme başarısız!', 'error');
         }
         
       } catch (error) {
@@ -13621,7 +13673,7 @@ ${mesajlar.join('\n')}
         hafta.kilitli = true;
         saveToStorage();
         
-        alert(`❌ Kilit açma hatası: ${error.message}`);
+        showToast(`❌ Kilit açma hatası!`, 'error');
       }
     }
     
@@ -13645,7 +13697,7 @@ ${mesajlar.join('\n')}
     // Hafta kaydet ve kilitle
     async function haftaKaydet(i) {
       if (!seciliHasta) {
-        alert('❌ Lütfen önce bir hasta seçin!');
+        showToast('❌ Lütfen önce bir hasta seçin!', 'error');
         return;
       }
       
@@ -13653,16 +13705,18 @@ ${mesajlar.join('\n')}
       const hafta = haftalar[i];
       
       if (hafta.kilitli) {
-        alert('⚠️ Bu hafta zaten kilitli!');
+        showToast('⚠️ Bu hafta zaten kilitli!', 'warning');
         return;
       }
       
-      // Kullanıcıdan onay al
-      const onay = confirm(`🔒 ${hafta.haftaNo}. haftayı kaydetmek ve kilitlemek istediğinize emin misiniz?\n\nKilitlendikten sonra:\n• PDF değiştirilemez\n• GPT mesajı değiştirilemez\n• Açıklama değiştirilemez\n\n⚠️ Değişiklik yapmak için kilidi açmanız gerekecek.`);
-      
-      if (!onay) return;
-      
       try {
+        // 0. ÖNEMLİ: GPT mesajını kaydet (eğer textarea'da yazılı metin varsa ve henüz kaydedilmemişse)
+        const gptTextarea = document.getElementById('gptMesaj_' + i);
+        if (gptTextarea && gptTextarea.value !== (hafta.gptMesaj || '')) {
+          console.log('📝 GPT mesajı hafta kilitleme sırasında otomatik kaydediliyor...');
+          hafta.gptMesaj = gptTextarea.value;
+        }
+        
         // 1. Hafta verilerini güncelle
         hafta.kilitli = true;
         hafta.kilitlenmeTarihi = new Date().toISOString();
@@ -13675,10 +13729,10 @@ ${mesajlar.join('\n')}
         
         if (githubBasarili) {
           console.log(`✅ ${hafta.haftaNo}. hafta kaydedildi ve kilitlendi`);
-          alert(`✅ ${hafta.haftaNo}. hafta başarıyla kaydedildi ve kilitlendi!\n\n🔒 Hafta artık yanlışlıkla değiştirilemez.\n💾 Veriler GitHub'a kaydedildi.`);
+          showToast(`🔒 ${hafta.haftaNo}. hafta kilitlendi!`);
         } else {
           console.warn(`⚠️ ${hafta.haftaNo}. hafta kilitlendi ama GitHub kaydı başarısız`);
-          alert(`⚠️ ${hafta.haftaNo}. hafta kilitlendi ancak GitHub'a kaydetme başarısız!\n\n🔒 Yerel kilit aktif.\n💾 GitHub bağlantınızı kontrol edin.`);
+          showToast(`🔒 ${hafta.haftaNo}. hafta kilitlendi (GitHub kayıt hatası)`, 'warning');
         }
         
         // 4. UI'ı güncelle
@@ -13689,14 +13743,14 @@ ${mesajlar.join('\n')}
         
       } catch (error) {
         console.error('❌ Hafta kaydetme ve kilitleme hatası:', error);
-        alert(`❌ Hafta kaydetme başarısız!\n\nHata: ${error.message}`);
+        showToast(`❌ Hafta kaydetme başarısız!`, 'error');
       }
     }
     
     // Hafta kilidini aç
     async function haftaKilidiAc(i) {
       if (!seciliHasta) {
-        alert('❌ Lütfen önce bir hasta seçin!');
+        showToast('❌ Lütfen önce bir hasta seçin!', 'error');
         return;
       }
       
@@ -13704,14 +13758,9 @@ ${mesajlar.join('\n')}
       const hafta = haftalar[i];
       
       if (!hafta.kilitli) {
-        alert('⚠️ Bu hafta zaten kilitli değil!');
+        showToast('⚠️ Bu hafta zaten kilitli değil!', 'warning');
         return;
       }
-      
-      // Kullanıcıdan onay al
-      const onay = confirm(`🔓 ${hafta.haftaNo}. haftanın kilidini açmak istediğinize emin misiniz?\n\nKilit açıldıktan sonra:\n• PDF değiştirilebilir\n• GPT mesajı değiştirilebilir\n• Açıklama değiştirilebilir\n\n⚠️ Yanlışlıkla veri kaybı riski oluşur!`);
-      
-      if (!onay) return;
       
       try {
         // 1. Hafta verilerini güncelle
@@ -13726,10 +13775,10 @@ ${mesajlar.join('\n')}
         
         if (githubBasarili) {
           console.log(`🔓 ${hafta.haftaNo}. hafta kilidi açıldı`);
-          alert(`🔓 ${hafta.haftaNo}. hafta kilidi başarıyla açıldı!\n\n✏️ Artık düzenleyebilirsiniz.\n💾 Değişiklik GitHub'a kaydedildi.`);
+          showToast(`🔓 ${hafta.haftaNo}. hafta kilidi açıldı!`);
         } else {
           console.warn(`⚠️ ${hafta.haftaNo}. hafta kilidi açıldı ama GitHub kaydı başarısız`);
-          alert(`⚠️ ${hafta.haftaNo}. hafta kilidi açıldı ancak GitHub'a kaydetme başarısız!\n\n🔓 Yerel kilit açık.\n💾 GitHub bağlantınızı kontrol edin.`);
+          showToast(`🔓 ${hafta.haftaNo}. hafta kilidi açıldı (GitHub kayıt hatası)`, 'warning');
         }
         
         // 4. UI'ı güncelle
@@ -13740,7 +13789,7 @@ ${mesajlar.join('\n')}
         
       } catch (error) {
         console.error('❌ Hafta kilit açma hatası:', error);
-        alert(`❌ Kilit açma başarısız!\n\nHata: ${error.message}`);
+        showToast(`❌ Kilit açma başarısız!`, 'error');
       }
     }
     
