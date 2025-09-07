@@ -15,7 +15,7 @@
       "pdfYolu": "pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
       "githubUrl": "https://github.com/mustafasacar35/lipodem-takip-paneli-2/blob/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
       "indirmeUrl": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-2/main/pdfs/BENSU DANSIK 13-24 AĞUSTOS 2. HAFTA.pdf",
-      "kayitTarihi": "2025-09-07T08:06:47.009Z",
+      "kayitTarihi": "2025-09-07T08:44:42.359Z",
       "tarifKartlar": [
         {
           "tarifAdi": "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
@@ -165,7 +165,7 @@
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir"
       ],
       "gptMesaj": "ggg",
-      "kilitli": false,
+      "kilitli": true,
       "pdfFile": {},
       "manuelKartlar": [],
       "eslesenTarifler": [
@@ -270,6 +270,6 @@
   ],
   "olusturmaTarihi": "2025-09-07T08:06:09.338Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T08:44:38.028Z",
+  "sonGuncelleme": "2025-09-07T08:44:42.372Z",
   "githubKaydedildi": true
 }
