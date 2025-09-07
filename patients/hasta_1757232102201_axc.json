@@ -24,12 +24,6 @@
           "eslesmeTuru": "tam eşleşme"
         },
         {
-          "tarifAdi": "köfte",
-          "kartResmi": "keto_kofte.jpg",
-          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/keto_kofte.jpg",
-          "eslesmeTuru": "manuel eşleştirme"
-        },
-        {
           "tarifAdi": "tavuklu mantar sote (150 gr tavuk ya da hindi ile)",
           "kartResmi": "tavuklu_mantar_sote.jpg",
           "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-2/tarifler/tavuklu_mantar_sote.jpg",
@@ -161,7 +155,6 @@
       "manuelKartlar": [],
       "eslesenTarifler": [
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
-        "köfte",
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
         "tavuklu mantar sote (150 gr tavuk ya da hindi ile)",
         "haşhaş ezmesi ekmeği (1 dilim) ya da 10 adet çiğ badem",
@@ -185,6 +178,7 @@
         "mevsim yeşillikleri (dereotu, maydanoz, sirke,limon ve 1 yemek kaşığı zeytinyağı ile)",
         "zeytin (10 adet)",
         "akşam (tercihen hava kararınca)",
+        "köfte",
         "yeşil salata (marul, dereotu, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
         "fındık (20 adet)",
         "toz kollajen 1 ölçek",
@@ -257,27 +251,10 @@
         "günlük ortalama 5000 adım önerilir",
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir"
       ]
-    },
-    {
-      "haftaNo": 2,
-      "baslangic": "2025-08-25",
-      "bitis": "2025-08-31",
-      "aciklama": "",
-      "pdf": null,
-      "pdfName": null,
-      "pdfOrijinalIsim": null,
-      "pdfYolu": null,
-      "githubUrl": null,
-      "indirmeUrl": null,
-      "kayitTarihi": null,
-      "tarifKartlar": [],
-      "tarifler": [],
-      "gptMesaj": "",
-      "kilitli": false
     }
   ],
   "olusturmaTarihi": "2025-09-07T08:01:42.201Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-07T09:56:29.419Z",
+  "sonGuncelleme": "2025-09-07T11:29:37.921Z",
   "githubKaydedildi": true
 }
