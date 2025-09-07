@@ -1078,6 +1078,13 @@
               baslangicAy: match[4].toUpperCase(),
               bitisAy: match[4].toUpperCase() // Aynı ay
             };
+            
+            console.log(`🎯 PATTERN 1 MATCH - Dosya: ${fileName}`);
+            console.log(`   📝 Hasta: ${sonuc.hastaAdi}`);
+            console.log(`   📅 Tarih: ${match[2]}-${match[3]} ${match[4]}`);
+            console.log(`   🔢 Hafta: ${sonuc.haftaNo}`);
+            console.log(`   🗓️ Başlangıç: ${sonuc.baslangicGun} ${sonuc.baslangicAy}`);
+            console.log(`   🗓️ Bitiş: ${sonuc.bitisGun} ${sonuc.bitisAy}`);
           } else {
             // Genel format
             sonuc = {
@@ -1111,6 +1118,8 @@
         return null;
       }
       
+      console.log('🔍 parseEdilmistarihleriDateOlarak giriş:', parsedData);
+      
       const currentYear = new Date().getFullYear();
       const baslangicAyNo = turkceAyToNumber(parsedData.baslangicAy);
       const bitisAyNo = parsedData.bitisAy ? turkceAyToNumber(parsedData.bitisAy) : baslangicAyNo;
@@ -1120,19 +1129,95 @@
         return null;
       }
       
-      // Başlangıç ve bitiş tarihlerini oluştur
-      const baslangicTarih = new Date(currentYear, baslangicAyNo - 1, parsedData.baslangicGun);
-      const bitisTarih = new Date(currentYear, bitisAyNo - 1, parsedData.bitisGun || parsedData.baslangicGun);
+      console.log('🔍 Tarih bileşenleri:', {
+        currentYear,
+        baslangicGun: parsedData.baslangicGun,
+        baslangicAyNo,
+        bitisGun: parsedData.bitisGun,
+        bitisAyNo
+      });
+      
+      // ⚡ TİMEZONE FİX: Direkt string formatında oluştur, Date objesi kullanma!
+      const baslangicDateStr = `${currentYear}-${baslangicAyNo.toString().padStart(2, '0')}-${parsedData.baslangicGun.toString().padStart(2, '0')}`;
+      const bitisDateStr = `${currentYear}-${bitisAyNo.toString().padStart(2, '0')}-${(parsedData.bitisGun || parsedData.baslangicGun).toString().padStart(2, '0')}`;
+      
+      console.log('🔍 Oluşturulan tarih stringleri:', {
+        baslangicDateStr,
+        bitisDateStr
+      });
+      
+      // Gün sayısını hesapla (Date objesi sadece hesaplama için)
+      const baslangicDate = new Date(currentYear, baslangicAyNo - 1, parsedData.baslangicGun);
+      const bitisDate = new Date(currentYear, bitisAyNo - 1, parsedData.bitisGun || parsedData.baslangicGun);
       
       // Bitiş tarihi başlangıçtan küçükse, sonraki yıla geç
-      if (bitisTarih < baslangicTarih) {
-        bitisTarih.setFullYear(currentYear + 1);
+      if (bitisDate < baslangicDate) {
+        bitisDate.setFullYear(currentYear + 1);
       }
       
-      return {
-        baslangic: baslangicTarih.toISOString().slice(0, 10),
-        bitis: bitisTarih.toISOString().slice(0, 10)
+      const gunSayisi = Math.ceil((bitisDate - baslangicDate) / (1000 * 60 * 60 * 24)) + 1;
+      
+      const result = {
+        baslangic: baslangicDateStr,
+        bitis: bitisDateStr,
+        gunSayisi: gunSayisi
       };
+      
+      console.log('✅ parseEdilmistarihleriDateOlarak sonuç:', result);
+      return result;
+    }
+
+    // PDF'den gelen tarih aralığına göre tab bilgilerini güncelle
+    function updateTabInfoFromPdf(haftaIndex, parsedPdf, parsedTarihler) {
+      if (!parsedTarihler || !parsedTarihler.gunSayisi) return;
+      
+      const haftalar = getHaftaListesi();
+      const hafta = haftalar[haftaIndex];
+      
+      console.log(`🎯 PDF TAB GÜNCELLEME - Hafta ${haftaIndex + 1}`);
+      console.log(`📅 PDF'den gelen tarihler:`, parsedTarihler);
+      console.log(`📅 Önceki hafta tarihleri:`, {
+        baslangic: hafta.baslangic,
+        bitis: hafta.bitis
+      });
+      
+      // ⚡ ÖNEMLİ: Hafta tarihlerini PDF'den gelen tarihlerle güncelle
+      hafta.baslangic = parsedTarihler.baslangic;
+      hafta.bitis = parsedTarihler.bitis;
+      
+      console.log(`✅ Hafta tarihleri PDF'den güncellendi:`, {
+        yeniBaslangic: hafta.baslangic,
+        yeniBitis: hafta.bitis
+      });
+      
+      // Tarih aralığı 7 günden fazla ise özel format kullan
+      if (parsedTarihler.gunSayisi > 7) {
+        console.log(`📅 PDF tarih aralığı ${parsedTarihler.gunSayisi} gün - Tab adı güncelleniyor`);
+        
+        // Tab adı için özel format: "1. Hafta\n08/13 - 08/24"
+        hafta.ozelTabFormat = true;
+        hafta.tabBaslik = `${hafta.haftaNo || (haftaIndex + 1)}. Hafta`;
+        
+        // Tarih formatını oluştur - ISO string'den direkt parse etmeye dikkat!
+        // Zaman dilimi sorununu önlemek için direkt split kullanıyoruz
+        const basDateParts = parsedTarihler.baslangic.split('-'); // [2025, 08, 13]
+        const bitDateParts = parsedTarihler.bitis.split('-'); // [2025, 08, 24]
+        
+        hafta.tabTarih = `${basDateParts[1]}/${basDateParts[2]} - ${bitDateParts[1]}/${bitDateParts[2]}`;
+        
+        console.log(`✅ Tab bilgileri güncellendi: ${hafta.tabBaslik} - ${hafta.tabTarih}`);
+      } else {
+        // Normal format kullan
+        hafta.ozelTabFormat = false;
+        delete hafta.tabBaslik;
+        delete hafta.tabTarih;
+        console.log(`📅 Normal tab formatı kullanılıyor (${parsedTarihler.gunSayisi} gün)`);
+      }
+      
+      // localStorage'a kaydet
+      saveToStorage();
+      
+      console.log(`💾 Hafta bilgileri localStorage'a kaydedildi`);
     }
 
     // Dosyayı Base64'e çevirme
@@ -1444,6 +1529,21 @@
             hafta.githubUrl = pdfSonuc.githubUrl;
             hafta.indirmeUrl = pdfSonuc.indirmeUrl;
             hafta.kayitTarihi = new Date().toISOString();
+            
+            // Tab bilgilerini güncelle (7 günden uzun aralık varsa özel format)
+            if (parsed.baslangicGun && parsed.baslangicAy) {
+              const parsedTarihler = parseEdilmistarihleriDateOlarak(parsed);
+              if (parsedTarihler && parsedTarihler.gunSayisi > 7) {
+                console.log(`📅 Çoklu PDF - uzun tarih aralığı tespit edildi: ${parsedTarihler.gunSayisi} gün`);
+                hafta.ozelTabFormat = true;
+                hafta.tabBaslik = `${hafta.haftaNo}. Hafta`;
+                
+                // Zaman dilimi sorununu önlemek için direkt split kullanıyoruz
+                const basDateParts = parsedTarihler.baslangic.split('-');
+                const bitDateParts = parsedTarihler.bitis.split('-');
+                hafta.tabTarih = `${basDateParts[1]}/${basDateParts[2]} - ${bitDateParts[1]}/${bitDateParts[2]}`;
+              }
+            }
             
             // PDF analizi için geçici Base64 oluştur (JSON'a kaydetmiyoruz!)
             const pdfBase64 = await fileToBase64(file);
@@ -6487,13 +6587,24 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
       
       let startDate = null;
       if (seciliHasta.haftalar.length > 0) {
-        // Son haftanın pazarından bir gün sonrası
-        const last = seciliHasta.haftalar[seciliHasta.haftalar.length-1];
+        // ⚡ ÖNEMLİ: Haftaları sıralanmış listeden al (en güncel tarihleri için)
+        const haftaListesi = getHaftaListesi();
+        const last = haftaListesi[haftaListesi.length-1];
+        
+        console.log('📅 Son hafta bilgisi (haftaEkle):', {
+          haftaNo: last.haftaNo,
+          baslangic: last.baslangic,
+          bitis: last.bitis
+        });
+        
         try {
-          if (last.baslangic) {
-            startDate = new Date(new Date(last.baslangic).getTime() + 7*24*60*60*1000);
+          if (last.bitis) {
+            // ⚡ ÖNEMLİ: Son haftanın BİTİŞ tarihinden 1 gün sonra başla
+            const sonHaftaBitis = new Date(last.bitis);
+            startDate = new Date(sonHaftaBitis.getTime() + 1*24*60*60*1000);
+            console.log('📅 Yeni hafta başlangıcı hesaplandı:', startDate.toISOString().slice(0,10));
           } else {
-            throw new Error('Başlangıç tarihi yok');
+            throw new Error('Bitiş tarihi yok');
           }
           
           // Tarih geçerli mi kontrol et
@@ -6522,6 +6633,13 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
       }
       
       const endDate = new Date(startDate.getTime() + 6*24*60*60*1000);
+      
+      console.log('📅 Yeni hafta tarihleri hesaplandı:', {
+        haftaNo: sonrakiHaftaNo,
+        startDate: startDate.toISOString().slice(0,10),
+        endDate: endDate.toISOString().slice(0,10)
+      });
+      
       seciliHasta.haftalar.push({
         haftaNo: sonrakiHaftaNo, // YENİ: Hafta numarası
         baslangic: startDate.toISOString().slice(0,10),
@@ -6546,6 +6664,18 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
       
       // Otomatik kaydetme - hafta eklendi
       autoSaveHastaData(seciliHasta);
+      
+      // ⚡ ÖNEMLİ: GitHub'a da kaydet (hemen)
+      console.log('💾 Yeni hafta GitHub\'a kaydediliyor...');
+      hastayiAyriKaydet(seciliHasta).then(() => {
+        console.log('✅ Yeni hafta GitHub\'a kaydedildi');
+      }).catch(e => {
+        console.warn('⚠️ GitHub kaydı başarısız:', e);
+      });
+      
+      // ⚡ ÖNEMLİ: Hasta listesini güncelle (yan taraftaki hafta numarası için)
+      console.log('🔄 Hasta listesi güncelleniyor (hafta numarası için)...');
+      renderHastalar();
       
       // Tab sistemini yeniden yükle ve yeni tab'a geç
       gosterHaftalar();
@@ -6668,6 +6798,12 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
             console.warn('Tarih oluşturma hatası hafta', index + 1, ':', e);
           }
         } else {
+          // ⚡ ÖNEMLİ: PDF'den özel tarih aralığı gelen haftaları normalize etme!
+          if (hafta.ozelTabFormat) {
+            console.log(`📅 ${index + 1}. hafta PDF'den özel tarih aralığına sahip, normalize edilmiyor`);
+            return; // Bu haftayı normal hizalama işleminden çıkar
+          }
+          
           // Mevcut başlangıç tarihinin pazartesi olmasını garanti altına al
           try {
             const baslangicTarihi = new Date(hafta.baslangic);
@@ -6782,7 +6918,11 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
         const bitisTarih = hafta.bitis || '';
         let tarihGosterim = '';
         
-        if (baslangicTarih && bitisTarih) {
+        // Özel tab formatı kontrolü
+        if (hafta.ozelTabFormat && hafta.tabBaslik && hafta.tabTarih) {
+          // PDF'den gelen uzun tarih aralığı için özel format
+          tarihGosterim = hafta.tabTarih;
+        } else if (baslangicTarih && bitisTarih) {
           try {
             const basParts = baslangicTarih.split('-');
             const bitParts = bitisTarih.split('-');
@@ -6797,8 +6937,11 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
           tarihGosterim = 'Tarih belirtilmemiş';
         }
         
+        // Tab başlığını belirle
+        const tabBaslik = hafta.ozelTabFormat && hafta.tabBaslik ? hafta.tabBaslik : `${haftaNo}. Hafta`;
+        
         tabDiv.innerHTML = `
-          <div style="font-weight: bold; font-size: 14px;">${haftaNo}. Hafta</div>
+          <div style="font-weight: bold; font-size: 14px;">${tabBaslik}</div>
           <div style="font-size: 10px; color: #666; margin-top: 2px;">
             ${tarihGosterim}
           </div>
@@ -8194,14 +8337,45 @@ function duzenleHafta(i) {
       if (parsedPdf && parsedPdf.baslangicGun && parsedPdf.baslangicAy) {
         const parsedTarihler = parseEdilmistarihleriDateOlarak(parsedPdf);
         if (parsedTarihler) {
+          console.log(`📅 ÖNCEDEN VAROLAN HAFTA TARİHLERİ:`, {
+            eskiBas: haftalar[i].baslangic,
+            eskiBit: haftalar[i].bitis
+          });
           console.log(`📅 PDF'den tarih aralığı alındı:`, parsedTarihler);
+          
+          // Tarihleri zorla güncelle
           haftalar[i].baslangic = parsedTarihler.baslangic;
           haftalar[i].bitis = parsedTarihler.bitis;
+          
+          console.log(`📅 YENİ HAFTA TARİHLERİ:`, {
+            yeniBas: haftalar[i].baslangic,
+            yeniBit: haftalar[i].bitis
+          });
+          
+          // Tab bilgilerini güncelle (7 günden uzun aralık varsa özel format)
+          updateTabInfoFromPdf(i, parsedPdf, parsedTarihler);
+          
+          // Tab'ları yeniden render et (özel format güncellemesi için)
+          console.log('🔄 Tab adları güncelleniyor...');
+          gosterHaftalar();
+          
+          // Hafta detayını da güncelle (tarih alanları için) - ZORUNLU GÜNCELLEME
+          console.log('🔄 Hafta detayı zorla güncelleniyor...');
+          
+          // Aktif tab'ı yeniden seç (hafta detayı yenilenmesi için)
+          setTimeout(() => {
+            const activeTabIndex = i;
+            console.log(`🔄 Aktif tab yeniden seçiliyor: ${activeTabIndex}`);
+            switchTab(activeTabIndex);
+          }, 100);
+          
+          // localStorage'a kaydet
+          saveToStorage();
           
           // Başarı mesajı göster
           const basTarih = new Date(parsedTarihler.baslangic).toLocaleDateString('tr-TR');
           const bitTarih = new Date(parsedTarihler.bitis).toLocaleDateString('tr-TR');
-          console.log(`✅ Tab tarihleri güncellendi: ${basTarih} - ${bitTarih}`);
+          console.log(`✅ Tab tarihleri güncellendi: ${basTarih} - ${bitTarih} (${parsedTarihler.gunSayisi} gün)`);
         }
       }
       
