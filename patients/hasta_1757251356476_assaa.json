@@ -5,25 +5,28 @@
   "arsiv": false,
   "haftalar": [
     {
-      "haftaNo": 1,
-      "baslangic": "2025-09-07",
-      "bitis": "2025-09-13",
+      "haftaNo": 2,
+      "baslangic": "2025-09-01",
+      "bitis": "2025-09-07",
       "aciklama": "",
       "pdf": null,
-      "pdfName": null,
-      "pdfOrijinalIsim": null,
-      "pdfYolu": null,
-      "githubUrl": null,
-      "indirmeUrl": null,
-      "kayitTarihi": null,
+      "pdfName": "ZEYNEP ŞENTÜRK 1-7 EYLÜL 2. HAFTA.pdf",
+      "pdfOrijinalIsim": "ZEYNEP ŞENTÜRK 1-7 EYLÜL 2. HAFTA.pdf",
+      "pdfYolu": "pdfs/ZEYNEP ŞENTÜRK 1-7 EYLÜL 2. HAFTA.pdf",
+      "githubUrl": "https://github.com/mustafasacar35/lipodem-takip-paneli-3/blob/main/pdfs/ZEYNEP ŞENTÜRK 1-7 EYLÜL 2. HAFTA.pdf",
+      "indirmeUrl": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-3/main/pdfs/ZEYNEP ŞENTÜRK 1-7 EYLÜL 2. HAFTA.pdf",
+      "kayitTarihi": "2025-09-08T16:07:07.515Z",
       "tarifKartlar": [],
       "tarifler": [],
       "gptMesaj": "",
-      "kilitli": false
+      "kilitli": false,
+      "ozelTabFormat": false,
+      "pdfFile": {},
+      "manuelKartlar": []
     }
   ],
   "olusturmaTarihi": "2025-09-07T13:22:36.476Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-08T16:07:01.202Z",
+  "sonGuncelleme": "2025-09-08T16:07:07.518Z",
   "githubKaydedildi": true
 }
