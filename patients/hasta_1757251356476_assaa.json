@@ -16,25 +16,33 @@
       "githubUrl": "https://github.com/mustafasacar35/lipodem-takip-paneli-3/blob/main/pdfs/ZEYNEP ŞENTÜRK 1-7 EYLÜL 1. HAFTA.pdf",
       "indirmeUrl": "https://raw.githubusercontent.com/mustafasacar35/lipodem-takip-paneli-3/main/pdfs/ZEYNEP ŞENTÜRK 1-7 EYLÜL 1. HAFTA.pdf",
       "kayitTarihi": "2025-09-08T16:10:19.936Z",
-      "tarifKartlar": [],
-      "tarifler": [],
-      "gptMesaj": "",
-      "kilitli": false,
-      "ozelTabFormat": false,
-      "pdfFile": {},
-      "manuelKartlar": [],
-      "eslesenTarifler": [
-        "karabuğday ekmeği 1 dilim 25 gr",
-        "patlıcan musakka",
-        "karabuğday ekmeği 1 dilim 25 gr",
-        "közlenmiş patlıcan salatası",
-        "karabuğday ekmeği 1 dilim 25 gr",
-        "karabuğday ekmeği 1 dilim 25 gr",
-        "tavuk döner (100 gr)",
-        "karabuğday ekmeği 1 dilim 25 gr",
-        "karabuğday ekmeği 1 dilim 25 gr"
+      "tarifKartlar": [
+        {
+          "tarifAdi": "karabuğday ekmeği 1 dilim 25 gr",
+          "kartResmi": "karabugday_ekmegi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-3/tarifler/karabugday_ekmegi.jpg",
+          "eslesmeTuru": "tam eşleşme"
+        },
+        {
+          "tarifAdi": "patlıcan musakka",
+          "kartResmi": "patlican_musakka.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-3/tarifler/patlican_musakka.jpg",
+          "eslesmeTuru": "tam eşleşme"
+        },
+        {
+          "tarifAdi": "közlenmiş patlıcan salatası",
+          "kartResmi": "kozlenmis_patlican_salatasi.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-3/tarifler/kozlenmis_patlican_salatasi.jpg",
+          "eslesmeTuru": "tam eşleşme"
+        },
+        {
+          "tarifAdi": "tavuk döner (100 gr)",
+          "kartResmi": "tavuk_doner.jpg",
+          "kartData": "https://mustafasacar35.github.io/lipodem-takip-paneli-3/tarifler/tavuk_doner.jpg",
+          "eslesmeTuru": "tam eşleşme"
+        }
       ],
-      "eslesmeyenTarifler": [
+      "tarifler": [
         "zeynep şentürk / 1-7 eylül 2025",
         "her sabah güne başlarken:",
         "ılık su + 1 yk. zeytinyağı + 5-10 damla limon - 1 yk. elma sirkesi",
@@ -45,7 +53,9 @@
         "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
         "zeytin (5 adet)",
         "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "karabuğday ekmeği 1 dilim 25 gr",
         "akşam (tercihen hava kararınca)",
+        "patlıcan musakka",
         "yeşil salata + 1 yemek kaşığı zeytinyağı ile",
         "kollajen (1 ölçek 10 gram)",
         "sali",
@@ -56,6 +66,7 @@
         "karabuğday ekmeği 1 dilim 25 gr",
         "akşam (tercihen hava kararınca)",
         "tavuk güveç",
+        "közlenmiş patlıcan salatası",
         "çarşamba",
         "öğle (tercihen saat 12:00 civarında)",
         "fırında domates soslu sebze kızartması (1 kabak, 3 yeşil biber, 1 adet orta boy patlıcan + üzerine 1 adet domates ve 1 diş",
@@ -98,6 +109,7 @@
         "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı",
         "ceviz (3 adet)",
         "akşam (tercihen hava kararınca)",
+        "tavuk döner (100 gr)",
         "yeşil salata + 1 yemek kaşığı zeytinyağı ile",
         "karabuğday ekmeği 1 dilim 25 gr",
         "çilek",
@@ -117,11 +129,27 @@
         "günlük ortalama 5000 adım önerilir",
         "günlük su tüketimi 2 litrenin üzerinde olması önerilir",
         "yeşillikler için sevdiklerinizle değiştirebilirsiniz."
+      ],
+      "gptMesaj": "",
+      "kilitli": false,
+      "ozelTabFormat": false,
+      "pdfFile": {},
+      "manuelKartlar": [],
+      "eslesenTarifler": [
+        "karabuğday ekmeği 1 dilim 25 gr",
+        "patlıcan musakka",
+        "karabuğday ekmeği 1 dilim 25 gr",
+        "közlenmiş patlıcan salatası",
+        "karabuğday ekmeği 1 dilim 25 gr",
+        "karabuğday ekmeği 1 dilim 25 gr",
+        "tavuk döner (100 gr)",
+        "karabuğday ekmeği 1 dilim 25 gr",
+        "karabuğday ekmeği 1 dilim 25 gr"
       ]
     }
   ],
   "olusturmaTarihi": "2025-09-07T13:22:36.476Z",
   "yeniSistem": true,
-  "sonGuncelleme": "2025-09-08T16:10:19.940Z",
+  "sonGuncelleme": "2025-09-08T16:10:22.926Z",
   "githubKaydedildi": true
 }
