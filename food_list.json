@@ -15154,6 +15154,44 @@
     {
       "name": "Yeni Eklenenler",
       "items": []
+    },
+    {
+      "name": "OGLE",
+      "items": [
+        {
+          "name": "yumurta salatasä± (2 adet haålanmä±å yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 yemek kaåä±ää± zeytinyaää±",
+          "category": "OGLE",
+          "calories": 272.4,
+          "protein": 12.1,
+          "carbs": 2,
+          "fat": 24,
+          "minQuantity": 1,
+          "maxQuantity": 1,
+          "step": 1,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "yumurta",
+            "zeytin",
+            "zeytinyaÄÄ±",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [
+            "kuruyemiÅ"
+          ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        }
+      ]
     }
   ]
 }
