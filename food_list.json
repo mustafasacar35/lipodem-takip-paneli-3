@@ -1459,42 +1459,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yumurta",
-            "zeytin",
-            "sebze",
-            "zeytinyağı",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "yoğurt",
-            "kuruyemiş",
-            "soğan"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "1 yumurta, 1 çorba kaşığı lupin unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve lupin ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -15177,6 +15141,42 @@
           "tags": [
             "yumurta",
             "tereyağı",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "yoğurt",
+            "kuruyemiş",
+            "soğan"
+          ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
+          "name": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+          "category": "OGLE",
+          "calories": 147,
+          "protein": 10,
+          "carbs": 2,
+          "fat": 11,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "yumurta",
+            "zeytin",
+            "sebze",
+            "zeytinyağı",
             "keto"
           ],
           "compatibilityTags": [
