@@ -15190,6 +15190,36 @@
           ],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
+        },
+        {
+          "name": "cherry domates (2 adet)",
+          "category": "OGLE",
+          "calories": 4,
+          "protein": 0,
+          "carbs": 1,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "side",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": true,
+          "fillerDinner": false,
+          "tags": [
+            "domates",
+            "meyve",
+            "keto",
+            "salata"
+          ],
+          "compatibilityTags": [],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         }
       ]
     }
