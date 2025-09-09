@@ -14926,15 +14926,15 @@
         {
           "name": "cherry domates (2 adet)",
           "category": "OGLE",
-          "calories": 4.8,
+          "calories": 3.6,
           "protein": 0,
-          "carbs": 1.2,
+          "carbs": 0.9,
           "fat": 0,
           "minQuantity": 0.5,
           "maxQuantity": 1,
           "step": 0.5,
           "multiplier": 1,
-          "role": "",
+          "role": "mainDish",
           "mealType": [
             "lunch"
           ],
