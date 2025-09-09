@@ -6520,39 +6520,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Tavuk döner (100 gr)",
-          "category": "AKŞAM",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "tavuk",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "sebze",
-            "kuruyemiş",
-            "baharatlar"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "dinner"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "Kollajen",
           "category": "AKŞAM",
           "role": "supplement",
@@ -15217,6 +15184,44 @@
             "yoğurt",
             "kuruyemiş",
             "soğan"
+          ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        }
+      ]
+    },
+    {
+      "name": "AKSAM",
+      "items": [
+        {
+          "name": "tavuk döner (100 gr)",
+          "category": "AKSAM",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "dinner"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "tavuk",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "sebze",
+            "kuruyemiş",
+            "baharatlar"
           ],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
