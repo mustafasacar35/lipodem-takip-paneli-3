@@ -1392,40 +1392,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Haşlanmış yumurta (1 adet) + (üzerine eritilmiş 1 tatlı kaşığı tereyağı ve istenilen baharatlar",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yumurta",
-            "tereyağı",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "yoğurt",
-            "kuruyemiş",
-            "soğan"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "3 cherry domates ve bir adet biberi, bir yemek kaşığı zeytinyağı ile soteleyip, üzerine kekik ve pulbiber serpin",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -15217,6 +15183,40 @@
             "peynir",
             "domates",
             "avokado"
+          ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
+          "name": "haşlanmış yumurta (1 adet) + (üzerine eritilmiş 1 tatlı kaşığı tereyağı ve istenilen baharatlar",
+          "category": "OGLE",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "yumurta",
+            "tereyağı",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "yoğurt",
+            "kuruyemiş",
+            "soğan"
           ],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
