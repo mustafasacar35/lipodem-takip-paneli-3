@@ -1529,39 +1529,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Menemen (1  yumurta ile)",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "yumurta",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "peynir",
-            "domates",
-            "avokado"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "1 yumurta, 1 çorba kaşığı lupin unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve lupin ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -15218,6 +15185,39 @@
             "salata"
           ],
           "compatibilityTags": [],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
+          "name": "menemen (1  yumurta ile)",
+          "category": "OGLE",
+          "calories": 211,
+          "protein": 7,
+          "carbs": 3,
+          "fat": 19,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "yumurta",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "peynir",
+            "domates",
+            "avokado"
+          ],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
         }
