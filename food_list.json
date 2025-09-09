@@ -15180,6 +15180,29 @@
           "compatibilityTags": [],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
+        },
+        {
+          "name": "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)",
+          "category": "OGLE",
+          "calories": 0,
+          "protein": 0,
+          "carbs": 0,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [],
+          "keto": false,
+          "lowcarb": false,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [],
+          "compatibilityTags": [],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
         }
       ]
     }
