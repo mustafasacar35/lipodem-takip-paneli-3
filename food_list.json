@@ -1392,40 +1392,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "3 cherry domates ve bir adet biberi, bir yemek kaşığı zeytinyağı ile soteleyip, üzerine kekik ve pulbiber serpin",
-          "category": "ÖĞLEN",
-          "role": "mainDish",
-          "calories": 0,
-          "protein": 0,
-          "carbs": 0,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "zeytin",
-            "zeytinyağı",
-            "keto"
-          ],
-          "compatibilityTags": [
-            "salata",
-            "yoğurt",
-            "kuruyemiş",
-            "soğan"
-          ],
-          "keto": true,
-          "lowcarb": true,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "portionFixed": false,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "mealType": [
-            "lunch"
-          ],
-          "isReversedSeason": false
-        },
-        {
           "name": "3 cherry domatesi bir yemek kaşığı zeytinyağı ile soteleyip, üzerine kekik ve pul biber serpin",
           "category": "ÖĞLEN",
           "role": "mainDish",
@@ -15176,6 +15142,40 @@
             "yumurta",
             "zeytin",
             "sebze",
+            "zeytinyağı",
+            "keto"
+          ],
+          "compatibilityTags": [
+            "salata",
+            "yoğurt",
+            "kuruyemiş",
+            "soğan"
+          ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        },
+        {
+          "name": "Salatalık (orta boy 1 adet) + Cherry domates (2 adet)",
+          "category": "OGLE",
+          "calories": 12,
+          "protein": 1,
+          "carbs": 2,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [
+            "lunch"
+          ],
+          "keto": true,
+          "lowcarb": true,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "zeytin",
             "zeytinyağı",
             "keto"
           ],
