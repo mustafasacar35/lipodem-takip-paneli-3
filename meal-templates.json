@@ -1,8 +1,8 @@
 [
   {
     "id": "1757537829020",
-    "name": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda) ÃÂÃÂablonu 9",
-    "type": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda)",
+    "name": "ÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂÃÂÃÂ±nda) ÃÂÃÂÃÂÃÂablonu 9",
+    "type": "ÃÂÃÂÃÂÃÂ¶ÃÂÃÂÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂÃÂÃÂ±nda)",
     "createdDate": "2025-09-10",
     "totalMacros": {
       "kalori": 480,
@@ -12,7 +12,41 @@
     },
     "foods": [
       {
-        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂÃÂÃÂ± ile",
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÃÂÃÂÃÂÃÂ± kaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± ile",
+        "originalText": "sahanda yumurta (2 yumurta, 1 tatlÃÂÃÂÃÂÃÂ± kaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂÃÂÃÂ)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "YeÃÂÃÂÃÂÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlÃÂÃÂÃÂÃÂ± kaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± zeytinyaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± ile)",
+        "originalText": "yeÃÂÃÂÃÂÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlÃÂÃÂÃÂÃÂ± kaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± zeytinyaÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ± ile)"
+      },
+      {
+        "foodName": "KarabuÃÂÃÂÃÂÃÂday ekmeÃÂÃÂÃÂÃÂi 1 dilim 25 gr",
+        "originalText": "karabuÃÂÃÂÃÂÃÂday ekmeÃÂÃÂÃÂÃÂi 1 dilim 25 gr"
+      }
+    ]
+  },
+  {
+    "id": "1757537871530",
+    "name": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda) ÃÂÃÂablonu 9",
+    "type": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda)",
+    "createdDate": "2025-09-10",
+    "totalMacros": {
+      "kalori": 462,
+      "protein": 14,
+      "karb": 16,
+      "yag": 38
+    },
+    "foods": [
+      {
+        "foodName": "Kabak ÃÂÃÂekirdeÃÂÃÂi (1 avuÃÂÃÂ§)",
         "originalText": "sahanda yumurta (2 yumurta, 1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂ)"
       },
       {
@@ -34,43 +68,9 @@
     ]
   },
   {
-    "id": "1757537871530",
-    "name": "ÃÂ¶ÃÂle (tercihen saat 12:00 civarÃÂ±nda) ÃÂablonu 9",
-    "type": "ÃÂ¶ÃÂle (tercihen saat 12:00 civarÃÂ±nda)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 462,
-      "protein": 14,
-      "karb": 16,
-      "yag": 38
-    },
-    "foods": [
-      {
-        "foodName": "Kabak ÃÂekirdeÃÂi (1 avuÃÂ§)",
-        "originalText": "sahanda yumurta (2 yumurta, 1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± tereyaÃÂ)"
-      },
-      {
-        "foodName": "1/2 Avokado",
-        "originalText": "1/2 avokado"
-      },
-      {
-        "foodName": "Zeytin (5 adet)",
-        "originalText": "zeytin (5 adet)"
-      },
-      {
-        "foodName": "YeÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile)",
-        "originalText": "yeÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile)"
-      },
-      {
-        "foodName": "KarabuÃÂday ekmeÃÂi 1 dilim 25 gr",
-        "originalText": "karabuÃÂday ekmeÃÂi 1 dilim 25 gr"
-      }
-    ]
-  },
-  {
     "id": "1757538432636",
-    "name": "akÅam (tercihen hava kararÄ±nca) Åablonu 9",
-    "type": "akÅam (tercihen hava kararÄ±nca)",
+    "name": "akÃÂam (tercihen hava kararÃÂ±nca) ÃÂablonu 9",
+    "type": "akÃÂam (tercihen hava kararÃÂ±nca)",
     "createdDate": "2025-09-10",
     "totalMacros": {
       "kalori": 308,
@@ -80,23 +80,23 @@
     },
     "foods": [
       {
-        "foodName": "PatlÄ±can Musakka",
-        "originalText": "patlÄ±can musakka"
+        "foodName": "PatlÃÂ±can Musakka",
+        "originalText": "patlÃÂ±can musakka"
       },
       {
-        "foodName": "YeÅil Salata",
-        "originalText": "yeÅil salata + 1 yemek kaÅÄ±ÄÄ± zeytinyaÄÄ± ile"
+        "foodName": "YeÃÂil Salata",
+        "originalText": "yeÃÂil salata + 1 yemek kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile"
       },
       {
-        "foodName": "Kollajen (1 Ã¶lÃ§ek 10 gram)",
-        "originalText": "kollajen (1 Ã¶lÃ§ek 10 gram)"
+        "foodName": "Kollajen (1 ÃÂ¶lÃÂ§ek 10 gram)",
+        "originalText": "kollajen (1 ÃÂ¶lÃÂ§ek 10 gram)"
       }
     ]
   },
   {
     "id": "1757538441262",
-    "name": "öğle (tercihen saat 12:00 civarında) Şablonu 9",
-    "type": "öğle (tercihen saat 12:00 civarında)",
+    "name": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda) Åablonu 9",
+    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
     "createdDate": "2025-09-10",
     "totalMacros": {
       "kalori": 1097.6,
@@ -106,16 +106,16 @@
     },
     "foods": [
       {
-        "foodName": "Yumurta Salatası",
-        "originalText": "yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 tatlı kaşığı zeytinyağı"
+        "foodName": "Yumurta SalatasÄ±",
+        "originalText": "yumurta salatasÄ± (2 adet haÅlanmÄ±Å yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ±"
       },
       {
         "foodName": "cherry domates (2 adet)",
         "originalText": "cherry domates (2 adet)"
       },
       {
-        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
-        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+        "foodName": "KarabuÄday ekmeÄi 1 dilim 25 gr",
+        "originalText": "karabuÄday ekmeÄi 1 dilim 25 gr"
       },
       {
         "foodName": "Zeytin (5 adet)",
@@ -126,8 +126,8 @@
         "originalText": "ceviz (3 adet)"
       },
       {
-        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
-        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)"
+        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak Ä±spanak, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ±)",
+        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak Ä±spanak, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ±)"
       },
       {
         "foodName": "Zeytin (10 adet)",
@@ -138,12 +138,46 @@
         "originalText": "1/2 avokado"
       },
       {
-        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
-        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı"
+        "foodName": "Mevsim YeÅillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ± ile)",
+        "originalText": "mevsim yeÅillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet kÃ¼Ã§Ã¼k salatalÄ±k + 1 dilim limon +1 tatlÄ± kaÅÄ±ÄÄ±"
       },
       {
         "foodName": "Ceviz (3 adet)",
         "originalText": "ceviz (3 adet)"
+      }
+    ]
+  },
+  {
+    "id": "1757538449392",
+    "name": "akşam (tercihen hava kararınca) Şablonu 9",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-10",
+    "totalMacros": {
+      "kalori": 701,
+      "protein": 55,
+      "karb": 19,
+      "yag": 45
+    },
+    "foods": [
+      {
+        "foodName": "Patlıcan Musakka",
+        "originalText": "patlıcan musakka"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      },
+      {
+        "foodName": "Kıymalı - Yumurtalı ıspanak kavurma (2 adet yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
+        "originalText": "ispanaklı ve kıymalı yumurta (1 yumurta, 200 gram ıspanak, 100 gram kıyma)"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
       }
     ]
   }
