@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "id": "1757541575366",
+    "name": "öğle (tercihen saat 12:00 civarında)-1",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-10",
+    "dietType": "ketojenik",
+    "dietTypeName": "Ketojenik",
+    "totalMacros": {
+      "kalori": 615,
+      "protein": 23,
+      "karb": 7,
+      "yag": 55
+    },
+    "foods": [
+      {
+        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      }
+    ]
+  }
+]
