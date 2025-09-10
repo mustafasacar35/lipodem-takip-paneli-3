@@ -1,36 +1,1 @@
-[
-  {
-    "id": "1757538866596",
-    "name": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda) ÃÂÃÂablonu 9",
-    "type": "ÃÂÃÂ¶ÃÂÃÂle (tercihen saat 12:00 civarÃÂÃÂ±nda)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 480,
-      "protein": 14,
-      "karb": 16,
-      "yag": 40
-    },
-    "foods": [
-      {
-        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂÃÂÃÂ± ile",
-        "originalText": "sahanda yumurta (2 yumurta, 1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± tereyaÃÂÃÂ)"
-      },
-      {
-        "foodName": "1/2 Avokado",
-        "originalText": "1/2 avokado"
-      },
-      {
-        "foodName": "Zeytin (5 adet)",
-        "originalText": "zeytin (5 adet)"
-      },
-      {
-        "foodName": "YeÃÂÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± zeytinyaÃÂÃÂÃÂÃÂ± ile)",
-        "originalText": "yeÃÂÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlÃÂÃÂ± kaÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ± zeytinyaÃÂÃÂÃÂÃÂ± ile)"
-      },
-      {
-        "foodName": "KarabuÃÂÃÂday ekmeÃÂÃÂi 1 dilim 25 gr",
-        "originalText": "karabuÃÂÃÂday ekmeÃÂÃÂi 1 dilim 25 gr"
-      }
-    ]
-  }
-]
+[]
