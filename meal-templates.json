@@ -1,8 +1,8 @@
 [
   {
     "id": "1757537829020",
-    "name": "öğle (tercihen saat 12:00 civarında) Şablonu 9",
-    "type": "öğle (tercihen saat 12:00 civarında)",
+    "name": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda) Åablonu 9",
+    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
     "createdDate": "2025-09-10",
     "totalMacros": {
       "kalori": 480,
@@ -12,7 +12,41 @@
     },
     "foods": [
       {
-        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ± ile",
+        "originalText": "sahanda yumurta (2 yumurta, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄ)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "YeÅillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ± ile)",
+        "originalText": "yeÅillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ± ile)"
+      },
+      {
+        "foodName": "KarabuÄday ekmeÄi 1 dilim 25 gr",
+        "originalText": "karabuÄday ekmeÄi 1 dilim 25 gr"
+      }
+    ]
+  },
+  {
+    "id": "1757537871530",
+    "name": "öğle (tercihen saat 12:00 civarında) Şablonu 9",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-10",
+    "totalMacros": {
+      "kalori": 462,
+      "protein": 14,
+      "karb": 16,
+      "yag": 38
+    },
+    "foods": [
+      {
+        "foodName": "Kabak Çekirdeği (1 avuç)",
         "originalText": "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)"
       },
       {
