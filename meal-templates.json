@@ -1,8 +1,8 @@
 [
   {
     "id": "1757537829020",
-    "name": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda) Åablonu 9",
-    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
+    "name": "ÃÂ¶ÃÂle (tercihen saat 12:00 civarÃÂ±nda) ÃÂablonu 9",
+    "type": "ÃÂ¶ÃÂle (tercihen saat 12:00 civarÃÂ±nda)",
     "createdDate": "2025-09-10",
     "totalMacros": {
       "kalori": 480,
@@ -12,7 +12,41 @@
     },
     "foods": [
       {
-        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ± ile",
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± tereyaÃÂÃÂ± ile",
+        "originalText": "sahanda yumurta (2 yumurta, 1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± tereyaÃÂ)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "YeÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile)",
+        "originalText": "yeÃÂillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlÃÂ± kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile)"
+      },
+      {
+        "foodName": "KarabuÃÂday ekmeÃÂi 1 dilim 25 gr",
+        "originalText": "karabuÃÂday ekmeÃÂi 1 dilim 25 gr"
+      }
+    ]
+  },
+  {
+    "id": "1757537871530",
+    "name": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda) Åablonu 9",
+    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
+    "createdDate": "2025-09-10",
+    "totalMacros": {
+      "kalori": 462,
+      "protein": 14,
+      "karb": 16,
+      "yag": 38
+    },
+    "foods": [
+      {
+        "foodName": "Kabak ÃekirdeÄi (1 avuÃ§)",
         "originalText": "sahanda yumurta (2 yumurta, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄ)"
       },
       {
@@ -34,36 +68,28 @@
     ]
   },
   {
-    "id": "1757537871530",
-    "name": "öğle (tercihen saat 12:00 civarında) Şablonu 9",
-    "type": "öğle (tercihen saat 12:00 civarında)",
+    "id": "1757538432636",
+    "name": "akşam (tercihen hava kararınca) Şablonu 9",
+    "type": "akşam (tercihen hava kararınca)",
     "createdDate": "2025-09-10",
     "totalMacros": {
-      "kalori": 462,
-      "protein": 14,
-      "karb": 16,
-      "yag": 38
+      "kalori": 308,
+      "protein": 30,
+      "karb": 11,
+      "yag": 16
     },
     "foods": [
       {
-        "foodName": "Kabak Çekirdeği (1 avuç)",
-        "originalText": "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)"
+        "foodName": "Patlıcan Musakka",
+        "originalText": "patlıcan musakka"
       },
       {
-        "foodName": "1/2 Avokado",
-        "originalText": "1/2 avokado"
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
       },
       {
-        "foodName": "Zeytin (5 adet)",
-        "originalText": "zeytin (5 adet)"
-      },
-      {
-        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
-        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)"
-      },
-      {
-        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
-        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
       }
     ]
   }
