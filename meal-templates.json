@@ -34,32 +34,6 @@
     ]
   },
   {
-    "id": "1757539216975",
-    "name": "akÃÂam (tercihen hava kararÃÂ±nca) ÃÂablonu 9",
-    "type": "akÃÂam (tercihen hava kararÃÂ±nca)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 308,
-      "protein": 30,
-      "karb": 11,
-      "yag": 16
-    },
-    "foods": [
-      {
-        "foodName": "PatlÃÂ±can Musakka",
-        "originalText": "patlÃÂ±can musakka"
-      },
-      {
-        "foodName": "YeÃÂil Salata",
-        "originalText": "yeÃÂil salata + 1 yemek kaÃÂÃÂ±ÃÂÃÂ± zeytinyaÃÂÃÂ± ile"
-      },
-      {
-        "foodName": "Kollajen (1 ÃÂ¶lÃÂ§ek 10 gram)",
-        "originalText": "kollajen (1 ÃÂ¶lÃÂ§ek 10 gram)"
-      }
-    ]
-  },
-  {
     "id": "1757539461471",
     "name": "akşam (tercihen hava kararınca) Şablonu 98",
     "type": "akşam (tercihen hava kararınca)",
