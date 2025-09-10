@@ -142,5 +142,59 @@
         "originalText": "ceviz (3 adet)"
       }
     ]
+  },
+  {
+    "id": "1757538958110",
+    "name": "NM",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-10",
+    "totalMacros": {
+      "kalori": 1097.6,
+      "protein": 40,
+      "karb": 22.9,
+      "yag": 94
+    },
+    "foods": [
+      {
+        "foodName": "Yumurta Salatası",
+        "originalText": "yumurta salatası (2 adet haşlanmış yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 tatlı kaşığı zeytinyağı"
+      },
+      {
+        "foodName": "cherry domates (2 adet)",
+        "originalText": "cherry domates (2 adet)"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      },
+      {
+        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      }
+    ]
   }
 ]
