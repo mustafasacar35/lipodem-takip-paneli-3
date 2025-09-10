@@ -32,35 +32,5 @@
         "originalText": "karabuÃÂÃÂday ekmeÃÂÃÂi 1 dilim 25 gr"
       }
     ]
-  },
-  {
-    "id": "1757538909563",
-    "name": "AS",
-    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 579,
-      "protein": 13,
-      "karb": 8,
-      "yag": 55
-    },
-    "foods": [
-      {
-        "foodName": "haÅlanmÄ±Å yumurta (1 adet) + (Ã¼zerine eritilmiÅ 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ± ve istenilen baharatlar",
-        "originalText": "haÅlanmÄ±Å yumurta (1 adet) + (Ã¼zerine eritilmiÅ 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ± ve istenilen baharatlar"
-      },
-      {
-        "foodName": "Zeytin (10 adet)",
-        "originalText": "zeytin (10 adet)"
-      },
-      {
-        "foodName": "Roka SalatasÄ± (yarÄ±m baÄ roka, 5 fÄ±ndÄ±k turp, 3 cherry domates, yarÄ±m kÄ±rmÄ±zÄ± soÄan + limon, 1 yemek kaÅÄ±ÄÄ± zeytinyaÄÄ±)",
-        "originalText": "salatalÄ±k (orta boy) + cherry domates (2 adet)"
-      },
-      {
-        "foodName": "Ceviz (5 adet)",
-        "originalText": "ceviz (5 adet)"
-      }
-    ]
   }
 ]
