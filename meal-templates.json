@@ -60,28 +60,6 @@
     ]
   },
   {
-    "id": "1757539444482",
-    "name": "akÅam (tercihen hava kararÄ±nca) Åablonu 99",
-    "type": "akÅam (tercihen hava kararÄ±nca)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 490,
-      "protein": 29,
-      "karb": 17,
-      "yag": 34
-    },
-    "foods": [
-      {
-        "foodName": "Tavuk GÃ¼veÃ§",
-        "originalText": "tavuk gÃ¼veÃ§"
-      },
-      {
-        "foodName": "KÃ¶zlenmiÅ patlÄ±can salatasÄ±",
-        "originalText": "kÃ¶zlenmiÅ patlÄ±can salatasÄ±"
-      }
-    ]
-  },
-  {
     "id": "1757539461471",
     "name": "akşam (tercihen hava kararınca) Şablonu 98",
     "type": "akşam (tercihen hava kararınca)",
