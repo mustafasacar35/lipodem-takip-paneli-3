@@ -14183,30 +14183,6 @@
           "isReversedSeason": false
         },
         {
-          "name": "Kivi (1 adet)",
-          "calories": 61,
-          "protein": 1,
-          "carbs": 15,
-          "fat": 0,
-          "maxQuantity": 1,
-          "minQuantity": 0.5,
-          "step": 0.5,
-          "tags": [
-            "kivi"
-          ],
-          "role": "fruit",
-          "mealType": "snack",
-          "keto": false,
-          "lowcarb": false,
-          "fillerLunch": false,
-          "fillerDinner": false,
-          "category": "GENEL",
-          "portionFixed": true,
-          "multiplier": 1,
-          "seasonRange": "[1,12]",
-          "isReversedSeason": false
-        },
-        {
           "name": "Portakal (1 adet küçük boy)",
           "calories": 47,
           "protein": 1,
@@ -15223,6 +15199,36 @@
             "kuruyemiş",
             "baharatlar"
           ],
+          "seasonRange": "[1,12]",
+          "isReversedSeason": false
+        }
+      ]
+    },
+    {
+      "name": "APERATIF",
+      "items": [
+        {
+          "name": "Kivi (1 adet)",
+          "category": "APERATIF",
+          "calories": 61,
+          "protein": 1,
+          "carbs": 15,
+          "fat": 0,
+          "minQuantity": 0.5,
+          "maxQuantity": 1,
+          "step": 0.5,
+          "multiplier": 1,
+          "role": "mainDish",
+          "mealType": [],
+          "keto": false,
+          "lowcarb": false,
+          "portionFixed": false,
+          "fillerLunch": false,
+          "fillerDinner": false,
+          "tags": [
+            "kivi"
+          ],
+          "compatibilityTags": [],
           "seasonRange": "[1,12]",
           "isReversedSeason": false
         }
