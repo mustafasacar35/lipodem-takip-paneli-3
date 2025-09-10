@@ -1,59 +1,5 @@
 [
   {
-    "id": "1757538441262",
-    "name": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda) Åablonu 9",
-    "type": "Ã¶Äle (tercihen saat 12:00 civarÄ±nda)",
-    "createdDate": "2025-09-10",
-    "totalMacros": {
-      "kalori": 1097.6,
-      "protein": 40,
-      "karb": 22.9,
-      "yag": 94
-    },
-    "foods": [
-      {
-        "foodName": "Yumurta SalatasÄ±",
-        "originalText": "yumurta salatasÄ± (2 adet haÅlanmÄ±Å yumurta, 5 dal maydanoz, 5 dal dereotu, 1 dilim limon ve 1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ±"
-      },
-      {
-        "foodName": "cherry domates (2 adet)",
-        "originalText": "cherry domates (2 adet)"
-      },
-      {
-        "foodName": "KarabuÄday ekmeÄi 1 dilim 25 gr",
-        "originalText": "karabuÄday ekmeÄi 1 dilim 25 gr"
-      },
-      {
-        "foodName": "Zeytin (5 adet)",
-        "originalText": "zeytin (5 adet)"
-      },
-      {
-        "foodName": "Ceviz (3 adet)",
-        "originalText": "ceviz (3 adet)"
-      },
-      {
-        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak Ä±spanak, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ±)",
-        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak Ä±spanak, 1 tatlÄ± kaÅÄ±ÄÄ± tereyaÄÄ±)"
-      },
-      {
-        "foodName": "Zeytin (10 adet)",
-        "originalText": "zeytin (10 adet)"
-      },
-      {
-        "foodName": "1/2 Avokado",
-        "originalText": "1/2 avokado"
-      },
-      {
-        "foodName": "Mevsim YeÅillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlÄ± kaÅÄ±ÄÄ± zeytinyaÄÄ± ile)",
-        "originalText": "mevsim yeÅillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet kÃ¼Ã§Ã¼k salatalÄ±k + 1 dilim limon +1 tatlÄ± kaÅÄ±ÄÄ±"
-      },
-      {
-        "foodName": "Ceviz (3 adet)",
-        "originalText": "ceviz (3 adet)"
-      }
-    ]
-  },
-  {
     "id": "1757538449392",
     "name": "akşam (tercihen hava kararınca) Şablonu 9",
     "type": "akşam (tercihen hava kararınca)",
