@@ -188,5 +188,39 @@
       "weekNumber": 2,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "1757619591513",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Çarşamba - akşam. 2. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 349,
+      "protein": 46,
+      "karb": 3,
+      "yag": 17
+    },
+    "foods": [
+      {
+        "foodName": "250 gram ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+        "originalText": "250 gr. ızgara ya da fırında balık (çupra, levrek, alabalık vs.)"
+      },
+      {
+        "foodName": "2 avuç yeşil salata + bir tatlı kaşığı zeytin yağı",
+        "originalText": "2 avuç yeşil salata + bir yemek kaşığı zeytin yağı"
+      },
+      {
+        "foodName": "Toz kollajen 1 ölçek",
+        "originalText": "Toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
