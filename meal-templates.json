@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "id": "1757619555118",
+    "name": "1. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Pazartesi̇ - öğle. 2. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 281,
+      "protein": 10,
+      "karb": 4,
+      "yag": 25
+    },
+    "foods": [
+      {
+        "foodName": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
+        "originalText": "Badem unlu krep (1 yumurta ve 1 çorba kaşığı badem ununu çırpın. İstediğiniz baharatları ekleyin1 tatlı kaşığı zeytinyağı ile tavayı yağlağın.)"
+      },
+      {
+        "foodName": "Tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "Tulum / kaşar / lor peyniri (50 gram)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, marul vs.sirke ve limon ile)"
+      },
+      {
+        "foodName": "Fındık (20 adet)",
+        "originalText": "Fındık (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "PAZARTESİ"
+    }
+  }
+]
