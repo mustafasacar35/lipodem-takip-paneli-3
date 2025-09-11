@@ -450,5 +450,43 @@
       "weekNumber": 2,
       "dayName": "CUMARTESİ"
     }
+  },
+  {
+    "id": "1757619626855",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Pazar susamli omlet tulum peyniri veya kaşar peyniri (50 gram) - akşam. 2. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 931,
+      "protein": 28,
+      "karb": 18,
+      "yag": 83
+    },
+    "foods": [
+      {
+        "foodName": "Mücver",
+        "originalText": "Lahana ya da kabak Mücver"
+      },
+      {
+        "foodName": "Cevizli biber yoğurtlaması",
+        "originalText": "Cevizli biber yoğurtlaması"
+      },
+      {
+        "foodName": "Pita Ekmeği",
+        "originalText": "Pita ekmeği (1 adet) Turşu (organik, ev yapımı)"
+      },
+      {
+        "foodName": "Toz kollajen 1 ölçek",
+        "originalText": "Toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "PAZAR SUSAMLI OMLET TULUM PEYNIRI VEYA KAŞAR PEYNIRI (50 GRAM)"
+    }
   }
 ]
