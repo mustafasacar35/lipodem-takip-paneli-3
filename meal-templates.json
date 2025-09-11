@@ -166,5 +166,122 @@
       "dateRange": "1-7 EYLÜL",
       "weekNumber": 1
     }
+  },
+  {
+    "id": "1757611261737",
+    "name": "1. 📋 ZEYNEP ŞENTÜRK1-7 EYLÜL 2025-akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 3243.7,
+      "protein": 240.5,
+      "karb": 86,
+      "yag": 215.3
+    },
+    "foods": [
+      {
+        "foodName": "Patlıcan Musakka",
+        "originalText": "patlıcan musakka"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      },
+      {
+        "foodName": "Tavuk Güveç",
+        "originalText": "tavuk güveç"
+      },
+      {
+        "foodName": "Közlenmiş patlıcan salatası",
+        "originalText": "közlenmiş patlıcan salatası"
+      },
+      {
+        "foodName": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+        "originalText": "kıymalı kabak/ taze fasulye yemeği (100 gr kıyma ile)"
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Bitter çikolata (2 kare)",
+        "originalText": "bitter çikolata (2 kare)"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      },
+      {
+        "foodName": "Mantarlı Tavuk Sote (1 porsiyon)",
+        "originalText": "tavuk sote (150 gr tavuk fleto, 1adet orta boy domates,1 adet yeşil biber, 5 adet mantar, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "10 adet Çiğ Badem",
+        "originalText": "çiğ badem (10 adet)"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      },
+      {
+        "foodName": "Urfa / Adana Kebap (150 gram, 1 porsiyon)",
+        "originalText": "urfa / adana kebap 150 gram ( 1 porsiyon)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (dereotu, roka, maydanoz, marul vs. + 1 tatlı kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Kabak Çekirdeği (1 avuç)",
+        "originalText": "kabak çekirdeği (1 avuç)"
+      },
+      {
+        "foodName": "Bitter çikolata (2 kare)",
+        "originalText": "bitter çikolata (2 kare)"
+      },
+      {
+        "foodName": "Tavuk Döner (100 gram)",
+        "originalText": "tavuk döner (100 gr)"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      },
+      {
+        "foodName": "5 Adet Çilek",
+        "originalText": "çilek"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      },
+      {
+        "foodName": "Kıymalı - Yumurtalı ıspanak kavurma (2 adet yumurta, 50 gram kıyma, 100 gram Ispanak, 1 yemek kaşığı zeytinyağı, soğan",
+        "originalText": "ispanaklı ve kıymalı yumurta (1 yumurta, 200 gram ıspanak, 100 gram kıyma)"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata + 1 yemek kaşığı zeytinyağı ile"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1
+    }
   }
 ]
