@@ -154,5 +154,39 @@
       "weekNumber": 2,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "1757619588851",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Çarşamba - öğle. 2. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 268,
+      "protein": 8,
+      "karb": 5,
+      "yag": 24
+    },
+    "foods": [
+      {
+        "foodName": "Pita Ekmeği",
+        "originalText": "Pita ekmeği (2 adet) Tulum / kaşar / lor peyniri (50 gram)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "Yeşillikler (dereotu, roka, maydanoz, marul, sirke + limon ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "Zeytin (5 adet) Fındık (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
