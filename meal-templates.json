@@ -130,5 +130,45 @@
         "originalText": "karabuğday ekmeği 1 dilim 25 gr"
       }
     ]
+  },
+  {
+    "id": "1757568643993",
+    "name": "deneme1-öğle (tercihen saat 12:00 civarında)-1",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 480,
+      "protein": 14,
+      "karb": 16,
+      "yag": 40
+    },
+    "foods": [
+      {
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "originalText": "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)"
+      },
+      {
+        "foodName": "1/2 Avokado",
+        "originalText": "1/2 avokado"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      }
+    ],
+    "sourcePatient": {
+      "name": "deneme1",
+      "weekNumber": 1
+    }
   }
 ]
