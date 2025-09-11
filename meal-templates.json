@@ -222,5 +222,47 @@
       "weekNumber": 2,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "1757619596045",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Perşembe - öğle. 2. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 749,
+      "protein": 30,
+      "karb": 11,
+      "yag": 65
+    },
+    "foods": [
+      {
+        "foodName": "Badem Unlu Dere Otlu Poğaça (3 poğaça)",
+        "originalText": "Badem unlu dereotlu poğaça (3 adet)"
+      },
+      {
+        "foodName": "Tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "Tulum / kaşar / lor peyniri (50 gram)"
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "Salatalık (orta boy) + Cherry domates (2 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "Yeşillikler (dereotu, roka, maydanoz, marul sirke + limon ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Ceviz (5 adet)",
+        "originalText": "Ceviz (5 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
