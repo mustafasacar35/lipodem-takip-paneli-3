@@ -294,5 +294,51 @@
       "weekNumber": 2,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "1757619601219",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Cuma - öğle. 2. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 1075,
+      "protein": 49,
+      "karb": 15,
+      "yag": 91
+    },
+    "foods": [
+      {
+        "foodName": "Badem Unlu Dere Otlu Poğaça (3 poğaça)",
+        "originalText": "Badem unlu dereotlu poğaça (3 adet)"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "Tulum / kaşar peyniri (50 gram)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke+1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Fındık (20 adet)",
+        "originalText": "Fındık (20 adet)"
+      },
+      {
+        "foodName": "Yoğurtlu çılbır",
+        "originalText": "Yoğurtlu çılbır Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon, sirke ve 1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "Cherry domates (2 adet) Fındık (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "CUMA"
+    }
   }
 ]
