@@ -264,5 +264,35 @@
       "weekNumber": 2,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "1757619598901",
+    "name": "2. 📋 BETÜL GENÇ - 11-17 AĞUSTOS 2025 - Perşembe - akşam. 2. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 435,
+      "protein": 33,
+      "karb": 3,
+      "yag": 31
+    },
+    "foods": [
+      {
+        "foodName": "Kırmızı et ya da tavuklu bamya yemeği (100 gram et ile)",
+        "originalText": "Tavuklu Bamya Yemeği Yoğurtlu Salatalık Mezesi"
+      },
+      {
+        "foodName": "Un Helvası",
+        "originalText": "Un helvası Toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
