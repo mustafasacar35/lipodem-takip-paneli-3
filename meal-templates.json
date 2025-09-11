@@ -283,5 +283,42 @@
       "dateRange": "1-7 EYLÜL",
       "weekNumber": 1
     }
+  },
+  {
+    "id": "1757611721239",
+    "name": "1. 📋 BETÜL GENÇ11-17 AĞUSTOS 2025-akşam. 2. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 32.4,
+      "protein": 1.9,
+      "karb": 3.5,
+      "yag": 1.2
+    },
+    "foods": [
+      {
+        "foodName": "Köz Patlıcan",
+        "originalText": "200 gram köfte 100 gram köz patlıcan (1 tatlı kaşığı zeytinyağı ve tuz ile soteleyin. Soğuyunca 2 kaşık yoğurt ekleyip karıştırın. Üzerine köfteleri koyun)."
+      },
+      {
+        "foodName": "2 yemek kaşığı ev yoğurdu",
+        "originalText": "2 yemek kaşığı ev yoğurdu"
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "Turşu (organik, ev yapımı)"
+      },
+      {
+        "foodName": "Toz kollajen 1 ölçek",
+        "originalText": "Toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "BETÜL GENÇ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 2
+    }
   }
 ]
