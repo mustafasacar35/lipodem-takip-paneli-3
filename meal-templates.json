@@ -39,5 +39,50 @@
       "dateRange": "1-7 EYLÜL",
       "weekNumber": 1
     }
+  },
+  {
+    "id": "1757575109920",
+    "name": "2. 📋 AYŞEGÜL FAROOQ4-7 EYLÜL 2025-öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 622.6,
+      "protein": 28,
+      "karb": 21.9,
+      "yag": 47
+    },
+    "foods": [
+      {
+        "foodName": "Mantarlı Yumurta (100 gram mantar, 1 yemek kaşığı tereyağı, 1 adet yumurta, tuz ve baharatlar)",
+        "originalText": "mantarlı yumurta(100 gr mantar, 1 yemek kaşığı tereyağı, 2 adet yumurta,tuz ve istenilen baharatlar)(mantarları ay"
+      },
+      {
+        "foodName": "1 dilim Keten Tohumu Ekmeği",
+        "originalText": "keten tohumu ekmeği 2 dilim"
+      },
+      {
+        "foodName": "cherry domates (2 adet)",
+        "originalText": "cherry domates (2 adet)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal maydanoz + 1 adet küçük boy salatalık + 1 dilim limon ve sirke+1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "AYŞEGÜL FAROOQ",
+      "dateRange": "4-7 EYLÜL",
+      "weekNumber": 1
+    }
   }
 ]
