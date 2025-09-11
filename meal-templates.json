@@ -39,5 +39,42 @@
       "dateRange": "1-7 EYLÜL",
       "weekNumber": 1
     }
+  },
+  {
+    "id": "1757569316221",
+    "name": "2. 📋 AYŞEGÜL FAROOQ4-7 EYLÜL 2025-akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-11",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 343.7,
+      "protein": 34.5,
+      "karb": 9,
+      "yag": 17.8
+    },
+    "foods": [
+      {
+        "foodName": "Tavuk Izgara",
+        "originalText": "ızgara tavuk göğsü (1 yemek kaşığı zeytinyağı ve istenilen baharatlarla ile marine edilmiş)"
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "5 Adet Çilek",
+        "originalText": "çilek"
+      },
+      {
+        "foodName": "Toz kollajen 1 ölçek",
+        "originalText": "toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "AYŞEGÜL FAROOQ",
+      "dateRange": "4-7 EYLÜL",
+      "weekNumber": 1
+    }
   }
 ]
