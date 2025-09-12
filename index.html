@@ -12256,13 +12256,30 @@ async function updateYemekVeritabaniAnalizi() {
       const tarifTemiz = tarifLower.trim();
 
       // Gün ve öğün isimlerini tespit et (yemek değil)
-      const gunOgunFiltreleri = [
-        'pazartesi', 'sali', 'çarşamba', 'perşembe', 'cuma', 'cumartesi', 'pazar',
-        'sabah', 'öğle', 'akşam', 'kahvaltı', 'öğlen', 'akşam yemeği',
-        'saat 07:00', 'saat 12:00', 'hava kararınca', 'civarında'
-      ];
-      const gunOgunMu = gunOgunFiltreleri.some(filtre =>
-        tarifTemiz.includes(filtre) || tarifTemiz === filtre
+      // Format kontrolü: "📅 PAZARTESİ", "🍽️ Öğle (tercihen saat 12:00 civarında)" vb.
+      const gunOgunMu = (
+        // Gün satırları için emoji + büyük harf kontrolleri
+        (tarif.includes('📅') && (
+          tarif.includes('PAZARTESİ') || tarif.includes('SALI') || 
+          tarif.includes('ÇARŞAMBA') || tarif.includes('PERŞEMBE') || 
+          tarif.includes('CUMA') || tarif.includes('CUMARTESİ') || 
+          tarif.includes('PAZAR')
+        )) ||
+        // Alternatif gün formatı: "1. Gün (Pazartesi)" 
+        (tarif.includes('Gün') && (
+          tarif.includes('Pazartesi') || tarif.includes('Salı') || 
+          tarif.includes('Çarşamba') || tarif.includes('Perşembe') || 
+          tarif.includes('Cuma') || tarif.includes('Cumartesi') || 
+          tarif.includes('Pazar')
+        )) ||
+        // Öğün satırları için emoji kontrolü
+        tarif.includes('🍽️') ||
+        // Ek öğün kalıpları
+        tarifTemiz.includes('saat 07:00') || 
+        tarifTemiz.includes('saat 12:00') || 
+        tarifTemiz.includes('hava kararınca') ||
+        (tarifTemiz.includes('öğle') && tarifTemiz.includes('tercihen')) ||
+        (tarifTemiz.includes('akşam') && tarifTemiz.includes('tercihen'))
       );
 
     if (gunOgunMu) {
@@ -15294,8 +15311,59 @@ async function yemekSil(yemekData) {
   console.log('🥑 Final listede avokado var mı?', autoApplied.filter(r => r.includes('avokado')));
   console.log('🐔 Final listede tavuk var mı?', autoApplied.filter(r => r.includes('tavuk')));
   console.log('🥩 Final listede pirzola var mı?', autoApplied.filter(r => r.includes('pirzola')));
+  
+  // Gün ve öğün satırlarına emoji ekle
+  const formattedResult = autoApplied.map(line => {
+    if (!line || typeof line !== 'string') return line;
+    
+    const originalLine = line;
+    const lowerLine = line.toLowerCase().trim();
+    
+    // Gün isimlerini tespit et ve emoji ekle
+    const gunIsimleri = [
+      { orijinal: 'pazartesi', buyuk: 'PAZARTESİ' },
+      { orijinal: 'salı', buyuk: 'SALI' },
+      { orijinal: 'çarşamba', buyuk: 'ÇARŞAMBA' },
+      { orijinal: 'perşembe', buyuk: 'PERŞEMBE' },
+      { orijinal: 'cuma', buyuk: 'CUMA' },
+      { orijinal: 'cumartesi', buyuk: 'CUMARTESİ' },
+      { orijinal: 'pazar', buyuk: 'PAZAR' }
+    ];
+    
+    // Gün kontrolü - tam satır gün adı mı yoksa içinde gün adı geçen tarif mi?
+    for (const gun of gunIsimleri) {
+      // Tam gün adı kontrolü (satırın tamamı veya çok benzer)
+      if (lowerLine === gun.orijinal || 
+          lowerLine === gun.buyuk.toLowerCase() ||
+          (lowerLine.includes(gun.orijinal) && lowerLine.length <= gun.orijinal.length + 5)) {
+        console.log(`📅 Gün satırı tespit edildi: "${originalLine}" → "📅 ${gun.buyuk}"`);
+        return `📅 ${gun.buyuk}`;
+      }
+    }
+    
+    // Öğün kontrolü
+    if (lowerLine.includes('öğle') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('12:00'))) {
+      console.log(`🍽️ Öğle öğünü tespit edildi: "${originalLine}" → "🍽️ Öğle (tercihen saat 12:00 civarında)"`);
+      return '🍽️ Öğle (tercihen saat 12:00 civarında)';
+    }
+    
+    if (lowerLine.includes('akşam') && (lowerLine.includes('hava') || lowerLine.includes('tercihen') || lowerLine.includes('kararmak') || lowerLine.includes('kararınca'))) {
+      console.log(`🍽️ Akşam öğünü tespit edildi: "${originalLine}" → "🍽️ Akşam (tercihen hava kararınca)"`);
+      return '🍽️ Akşam (tercihen hava kararınca)';
+    }
+    
+    if (lowerLine.includes('sabah') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('07:00') || lowerLine.includes('7:00'))) {
+      console.log(`🍽️ Sabah öğünü tespit edildi: "${originalLine}" → "🍽️ Sabah (tercihen saat 07:00 civarında)"`);
+      return '🍽️ Sabah (tercihen saat 07:00 civarında)';
+    }
+    
+    // Diğer satırları olduğu gibi döndür
+    return originalLine;
+  });
+  
+  console.log('✅ Emoji formatlanmış final liste:', formattedResult);
       
-  return autoApplied;
+  return formattedResult;
     }
 
     function normalizeNameDetay(name) {
