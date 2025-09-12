@@ -1488,5 +1488,59 @@
       "weekNumber": 9,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757710311007_3845",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Perşembe - öğle. 9. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 662.2,
+      "protein": 33,
+      "karb": 8.8,
+      "yag": 55
+    },
+    "foods": [
+      {
+        "foodName": "Kavurmalı Yumurta (50 gram kavurma, 2 adet yumurta)",
+        "originalText": "kavurmalı yumurta (1 yumurta, 50 gr. kavurma,istenilen baharatlar)",
+        "calories": 337.2,
+        "protein": 23,
+        "carbs": 2.8,
+        "fat": 26
+      },
+      {
+        "foodName": "Tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "tulum / kaşar / lor peyniri (50 gram)",
+        "calories": 82,
+        "protein": 6,
+        "carbs": 1,
+        "fat": 6
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy) + cherry domates (2 adet)",
+        "calories": 150,
+        "protein": 2,
+        "carbs": 4,
+        "fat": 14
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)",
+        "calories": 93,
+        "protein": 2,
+        "carbs": 1,
+        "fat": 9
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
