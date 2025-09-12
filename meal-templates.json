@@ -39,42 +39,42 @@
     }
   },
   {
-    "id": "sablon_1757711604374_3",
-    "name": "Hafif Akşam Yemeği",
-    "type": "akşam",
-    "dietType": "Low Carb",
-    "createdDate": "2024-01-03",
+    "id": "sablon_1757711604374_2",
+    "name": "Protein Zengin Öğle",
+    "type": "öğle",
+    "dietType": "High Protein",
+    "createdDate": "2024-01-02",
     "foods": [
       {
-        "foodName": "Somon",
-        "originalText": "120g ızgara somon",
-        "calories": 231,
-        "protein": 31,
+        "foodName": "Tavuk Göğsü",
+        "originalText": "150g ızgara tavuk göğsü",
+        "calories": 248,
+        "protein": 46,
         "carbs": 0,
-        "fat": 11
+        "fat": 5
       },
       {
-        "foodName": "Asparagus",
-        "originalText": "1 demet haşlanmış kuşkonmaz",
-        "calories": 27,
+        "foodName": "Quinoa",
+        "originalText": "1 kase haşlanmış quinoa",
+        "calories": 222,
+        "protein": 8,
+        "carbs": 39,
+        "fat": 4
+      },
+      {
+        "foodName": "Brokoli",
+        "originalText": "1 kase buharda pişmiş brokoli",
+        "calories": 31,
         "protein": 3,
-        "carbs": 5,
-        "fat": 0
-      },
-      {
-        "foodName": "Salata",
-        "originalText": "Karışık yeşil salata",
-        "calories": 20,
-        "protein": 2,
-        "carbs": 4,
+        "carbs": 6,
         "fat": 0
       }
     ],
     "totalMacros": {
-      "kalori": 278,
-      "protein": 36,
-      "karbonhidrat": 9,
-      "yag": 11
+      "kalori": 501,
+      "protein": 57,
+      "karbonhidrat": 45,
+      "yag": 9
     }
   }
 ]
