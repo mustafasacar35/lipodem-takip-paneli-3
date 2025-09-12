@@ -1570,5 +1570,43 @@
       "weekNumber": 4,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757703268357_7476",
+    "name": "5. 📋 MERYEM KARADAĞ ÜNNÜ - 11-17 AĞUSTOS 2025 - Çarşamba - öğle. 4. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 251,
+      "protein": 7,
+      "karb": 4,
+      "yag": 23
+    },
+    "foods": [
+      {
+        "foodName": "Ketojenik tost (2 dilim lupin unu ekmeği arasına 50 gram kaşar, yeşillikler, domates)",
+        "originalText": "ketojenik tost (2 ince dilim lupin unu ekmeği arasına 30 gram kaşar, 30 gr sucuk, domates)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul + sirke ve limon +1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Fındık (20 adet)",
+        "originalText": "fındık (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERYEM KARADAĞ ÜNNÜ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 4,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
