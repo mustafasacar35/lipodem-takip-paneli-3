@@ -986,5 +986,43 @@
       "weekNumber": 1,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757700519512_9535",
+    "name": "1. 📋 ZEYNEP ŞENTÜRK - 1-7 EYLÜL 2025 - Sali - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 428,
+      "protein": 10,
+      "karb": 16,
+      "yag": 36
+    },
+    "foods": [
+      {
+        "foodName": "menemen (1  yumurta ile)",
+        "originalText": "menemen (1 yumurta ile)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri ( maydanoz, marul, roka, dereotu vs. + sirke, limon ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "SALI"
+    }
   }
 ]
