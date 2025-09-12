@@ -1542,5 +1542,51 @@
       "weekNumber": 9,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "meal_1757710314097_1407",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Perşembe - akşam. 9. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 534,
+      "protein": 32,
+      "karb": 7,
+      "yag": 42
+    },
+    "foods": [
+      {
+        "foodName": "Urfa / Adana Kebap (150 gram, 1 porsiyon)",
+        "originalText": "urfa / adana kebap 100 gram (1 porsiyon)",
+        "calories": 258,
+        "protein": 23,
+        "carbs": 1,
+        "fat": 18
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)",
+        "calories": 158,
+        "protein": 3,
+        "carbs": 5,
+        "fat": 14
+      },
+      {
+        "foodName": "Kabak Çekirdeği (1 avuç)",
+        "originalText": "kabak çekirdeği (1 avuç)",
+        "calories": 118,
+        "protein": 6,
+        "carbs": 1,
+        "fat": 10
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
