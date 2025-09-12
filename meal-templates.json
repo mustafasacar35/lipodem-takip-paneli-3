@@ -1318,5 +1318,67 @@
       "weekNumber": 9,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757710303704_9302",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Sali - akşam. 9. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 204.4,
+      "protein": 21.9,
+      "karb": 8.5,
+      "yag": 9.2
+    },
+    "foods": [
+      {
+        "foodName": "100 gram Haşlama Et",
+        "originalText": "haşlama et",
+        "calories": 138,
+        "protein": 18,
+        "carbs": 3,
+        "fat": 6
+      },
+      {
+        "foodName": "Köz Patlıcan",
+        "originalText": "köz patlıcan (1 yemek kaşığı zeytinyağı ve tuz ile soteleyin. soğuyunca 2 kaşık yoğurt ekleyip karıştırın ).",
+        "calories": 15.4,
+        "protein": 0.9,
+        "carbs": 2.5,
+        "fat": 0.2
+      },
+      {
+        "foodName": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
+        "originalText": "ev yoğurdu",
+        "calories": 21,
+        "protein": 1,
+        "carbs": 2,
+        "fat": 1
+      },
+      {
+        "foodName": "Lupin Unlu Kek",
+        "originalText": "lupin unlu kek (1 dilim için)",
+        "calories": 30,
+        "protein": 2,
+        "carbs": 1,
+        "fat": 2
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "SALI"
+    }
   }
 ]
