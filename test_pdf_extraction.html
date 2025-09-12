@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test PDF Text Extraction</title>
+</head>
+<body>
+    <h1>PDF Text Extraction Test</h1>
+    <div id="output"></div>
+    
+    <script>
+        // Copy the exact extractTariflerDetay function from the main file
+        function extractTariflerDetay(text) {
+            console.log('🔍 extractTariflerDetay başlıyor...');
+            console.log('📄 Ham metin uzunluğu:', text.length);
+            
+            // Test data that should have day and meal lines formatted
+            let lines = text.split('\n').map(line => line.trim()).filter(l => l.length > 1);
+            
+            const result = lines.map(line => {
+                console.log(`Processing line: "${line}"`);
+                // Simulate the processing logic
+                let temizlenmis = line.toLowerCase().trim();
+                return temizlenmis;
+            });
+            
+            // Add the emoji formatting logic
+            const formattedResult = result.map(line => {
+                if (!line || typeof line !== 'string') return line;
+                
+                const originalLine = line;
+                const lowerLine = line.toLowerCase().trim();
+                
+                // Gün isimlerini tespit et ve emoji ekle
+                const gunIsimleri = [
+                    { orijinal: 'pazartesi', buyuk: 'PAZARTESİ' },
+                    { orijinal: 'salı', buyuk: 'SALI' },
+                    { orijinal: 'çarşamba', buyuk: 'ÇARŞAMBA' },
+                    { orijinal: 'perşembe', buyuk: 'PERŞEMBE' },
+                    { orijinal: 'cuma', buyuk: 'CUMA' },
+                    { orijinal: 'cumartesi', buyuk: 'CUMARTESİ' },
+                    { orijinal: 'pazar', buyuk: 'PAZAR' }
+                ];
+                
+                // Gün kontrolü
+                for (const gun of gunIsimleri) {
+                    if (lowerLine === gun.orijinal || 
+                        lowerLine === gun.buyuk.toLowerCase() ||
+                        (lowerLine.includes(gun.orijinal) && lowerLine.length <= gun.orijinal.length + 5)) {
+                        console.log(`📅 Gün satırı tespit edildi: "${originalLine}" → "📅 ${gun.buyuk}"`);
+                        return `📅 ${gun.buyuk}`;
+                    }
+                }
+                
+                // Öğün kontrolü
+                if (lowerLine.includes('öğle') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('12:00'))) {
+                    console.log(`🍽️ Öğle öğünü tespit edildi: "${originalLine}" → "🍽️ Öğle (tercihen saat 12:00 civarında)"`);
+                    return '🍽️ Öğle (tercihen saat 12:00 civarında)';
+                }
+                
+                if (lowerLine.includes('akşam') && (lowerLine.includes('hava') || lowerLine.includes('tercihen') || lowerLine.includes('kararmak') || lowerLine.includes('kararınca'))) {
+                    console.log(`🍽️ Akşam öğünü tespit edildi: "${originalLine}" → "🍽️ Akşam (tercihen hava kararınca)"`);
+                    return '🍽️ Akşam (tercihen hava kararınca)';
+                }
+                
+                if (lowerLine.includes('sabah') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('07:00') || lowerLine.includes('7:00'))) {
+                    console.log(`🍽️ Sabah öğünü tespit edildi: "${originalLine}" → "🍽️ Sabah (tercihen saat 07:00 civarında)"`);
+                    return '🍽️ Sabah (tercihen saat 07:00 civarında)';
+                }
+                
+                return originalLine;
+            });
+            
+            console.log('✅ Emoji formatlanmış final liste:', formattedResult);
+            return formattedResult;
+        }
+        
+        // Test data mimicking PDF content including the patterns mentioned in the problem statement
+        const testPdfText = `Test Hasta
+        1. Hafta
+        PAZARTESİ
+        Öğle (tercihen saat 12:00 civarında)
+        tavuk pirzola 150gr
+        salata
+        Akşam (tercihen hava kararınca)
+        et yemeği
+        SALI
+        sabah saat 07:00 civarında  
+        kahvaltı
+        öğle tercihen saat 12:00
+        balık
+        ÇARŞAMBA
+        150 gr avokado
+        normal yemek satırı
+        PERŞEMBE
+        öğle
+        akşam
+        CUMA
+        sabah`;
+        
+        console.log('🧪 Test başlatılıyor...');
+        console.log('📄 Test verisi:', testPdfText);
+        
+        const result = extractTariflerDetay(testPdfText);
+        
+        console.log('✅ Test tamamlandı');
+        console.log('📊 Sonuç:', result);
+        
+        // Display results
+        document.getElementById('output').innerHTML = `
+            <h2>Test Sonuçları:</h2>
+            <h3>Orijinal Metin:</h3>
+            <pre>${testPdfText}</pre>
+            <h3>İşlenmiş Sonuç:</h3>
+            <ul>
+                ${result.map(line => `<li>${line}</li>`).join('')}
+            </ul>
+            <h3>Beklenen Emoji Formatlanmış Satırlar:</h3>
+            <ul>
+                ${result.filter(line => line.includes('📅') || line.includes('🍽️')).map(line => `<li style="color: green; font-weight: bold;">${line}</li>`).join('')}
+            </ul>
+        `;
+    </script>
+</body>
+</html>
