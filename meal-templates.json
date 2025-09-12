@@ -158,5 +158,43 @@
       "weekNumber": 1,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757705318191_3052",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Çarşamba - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 677,
+      "protein": 38,
+      "karb": 12,
+      "yag": 53
+    },
+    "foods": [
+      {
+        "foodName": "Patlıcan Musakka",
+        "originalText": "patlıcan musakka (150 gr kıyma ile)"
+      },
+      {
+        "foodName": "Avokadolu Roka Salatası",
+        "originalText": "roka salatası (yarım bağ roka, 1 adet küçük salatalık, 3 adet cherry domates, yarım kırmızı soğan + limon, 1 tatlı"
+      },
+      {
+        "foodName": "Tahin ekmeği",
+        "originalText": "tahin ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Kollajen",
+        "originalText": "kollajen (1 ölçek 5 gram)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
