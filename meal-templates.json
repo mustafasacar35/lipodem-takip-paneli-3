@@ -1104,5 +1104,67 @@
       "weekNumber": 1,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757701853705_6437",
+    "name": "3. 📋 ZEYNEP ŞENTÜRK - 1-7 EYLÜL 2025 - Pazar - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 1022.8000000000001,
+      "protein": 43,
+      "karb": 32.7,
+      "yag": 80
+    },
+    "foods": [
+      {
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "originalText": "sahanda yumurta (2 yumurta, 1 tatlı kaşığı tereyağ)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      },
+      {
+        "foodName": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+        "originalText": "haşlanmış yumurta (2 adet)"
+      },
+      {
+        "foodName": "Sucuklu Yumurta (2 adet yumurta, 50 gram kasap sucuk, baharatlar)",
+        "originalText": "kasap sucuk (30 gram)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "cherry domates (2 adet)",
+        "originalText": "cherry domates (2 adet)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PAZAR"
+    }
   }
 ]
