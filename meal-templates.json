@@ -1528,5 +1528,47 @@
       "weekNumber": 4,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757703265701_1900",
+    "name": "5. 📋 MERYEM KARADAĞ ÜNNÜ - 11-17 AĞUSTOS 2025 - Çarşamba - akşam. 4. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 355,
+      "protein": 25,
+      "karb": 21,
+      "yag": 19
+    },
+    "foods": [
+      {
+        "foodName": "Patlıcan Musakka",
+        "originalText": "patlıcan musakka"
+      },
+      {
+        "foodName": "Yoğurtlu Salatalık Mezesi",
+        "originalText": "yoğurtlu salatalık mezesi"
+      },
+      {
+        "foodName": "Lupin Unlu Kek",
+        "originalText": "lupin unlu kek (1 dilim için)"
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)"
+      },
+      {
+        "foodName": "Toz kollajen 1 ölçek",
+        "originalText": "toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERYEM KARADAĞ ÜNNÜ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 4,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
