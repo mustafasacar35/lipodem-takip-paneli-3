@@ -744,5 +744,67 @@
       "weekNumber": 1,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "1757699697680",
+    "name": "1. 📋 ÖZLEM MAZIOĞLU - 25-31 AĞUSTOS 2025 - Pazar - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 1432,
+      "protein": 71,
+      "karb": 44,
+      "yag": 108
+    },
+    "foods": [
+      {
+        "foodName": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+        "originalText": "haşlanmış yumurta (2 adet)"
+      },
+      {
+        "foodName": "1 dilim Keten Tohumu Ekmeği",
+        "originalText": "keten tohumu ekmeği"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (dereotu, roka, maydanoz, marul vs + limon, sirke ve 1 tatlı kaşığı zeytinyağı ile"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "10 adet Çiğ Badem",
+        "originalText": "çiğ badem (10 adet)"
+      },
+      {
+        "foodName": "Maydanozlu Poğaça (2 adet)",
+        "originalText": "maydanozlu poğaça"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (30 gram)"
+      },
+      {
+        "foodName": "10 adet Çiğ Badem",
+        "originalText": "çiğ badem (10 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul vs. sirke ve limon ile)"
+      },
+      {
+        "foodName": "1 dilim Keten Tohumu Ekmeği",
+        "originalText": "keten tohumu ekmeği"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ÖZLEM MAZIOĞLU",
+      "dateRange": "25-31 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "PAZAR"
+    }
   }
 ]
