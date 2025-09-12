@@ -1380,5 +1380,67 @@
       "weekNumber": 9,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757710306785_2234",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Çarşamba - öğle. 9. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 383,
+      "protein": 14,
+      "karb": 12,
+      "yag": 31
+    },
+    "foods": [
+      {
+        "foodName": "Közlenmiş patlıcan salatası",
+        "originalText": "közlenmiş patlıcan salatası",
+        "calories": 178,
+        "protein": 4,
+        "carbs": 9,
+        "fat": 14
+      },
+      {
+        "foodName": "Tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "tulum / kaşar / lor peyniri (50 gram)",
+        "calories": 82,
+        "protein": 6,
+        "carbs": 1,
+        "fat": 6
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul, turp ve pancar sirke ve limon ile)",
+        "calories": 83,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 7
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)",
+        "calories": 40,
+        "protein": 1,
+        "carbs": 0,
+        "fat": 4
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
