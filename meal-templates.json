@@ -1486,5 +1486,47 @@
       "weekNumber": 1,
       "dayName": "CUMA"
     }
+  },
+  {
+    "id": "meal_1757703262881_6227",
+    "name": "5. 📋 MERYEM KARADAĞ ÜNNÜ - 11-17 AĞUSTOS 2025 - Pazartesi̇ - öğle. 4. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 316,
+      "protein": 17,
+      "karb": 8,
+      "yag": 24
+    },
+    "foods": [
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "beyaz peynir ya da kaşar peyniri"
+      },
+      {
+        "foodName": "1 dilim Lupin Unlu Ekmek",
+        "originalText": "lupin unlu ekmek (1 dilim)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata (marul, dereotu, roka, sirke, limon +1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERYEM KARADAĞ ÜNNÜ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 4,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
