@@ -230,5 +230,43 @@
       "weekNumber": 1,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "meal_1757705322856_8687",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Perşembe - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 528,
+      "protein": 62,
+      "karb": 7,
+      "yag": 28
+    },
+    "foods": [
+      {
+        "foodName": "250 gram ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+        "originalText": "ızgara ya da fırında balık (çupra, levrek, alabalık vs.)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (semizotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)",
+        "originalText": "bir yemek kaşığı tahin içerisine, 1 adet ezilmiş ceviz içi ve hafif tarçın serpin)"
+      },
+      {
+        "foodName": "Kollajen",
+        "originalText": "kollajen (1 ölçek 5 gram)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
