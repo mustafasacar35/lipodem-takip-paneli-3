@@ -666,5 +666,71 @@
       "weekNumber": 5,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "meal_1757709412074_3547",
+    "name": "3. 📋 NEVİN ŞAHAL - 8-14 EYLÜL 2025 - Cuma - öğle. 5. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 918,
+      "protein": 37,
+      "karb": 17,
+      "yag": 78
+    },
+    "foods": [
+      {
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "originalText": "sahanda yumurta (1 yumurta – 1 yemek kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke, limon ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (50 gram)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Haşhaş ezmesi ekmeği (1 dilim)",
+        "originalText": "haşhaş ezmesi ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Cherry domates (3 adet)",
+        "originalText": "cherry domates (3 adet)"
+      },
+      {
+        "foodName": "Peynirli Zeytin Ezmesi",
+        "originalText": "peynirli zeytin ezmesi"
+      },
+      {
+        "foodName": "Haşhaş ezmesi ekmeği (1 dilim)",
+        "originalText": "haşhaş ezmesi ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul vs. + sirke ve limon +1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Bitter çikolata (2 kare)",
+        "originalText": "bitter çikolata (2 kare)"
+      },
+      {
+        "foodName": "Ceviz (5 adet)",
+        "originalText": "ceviz (5 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "NEVİN ŞAHAL",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 5,
+      "dayName": "CUMA"
+    }
   }
 ]
