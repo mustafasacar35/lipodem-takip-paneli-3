@@ -40,5 +40,47 @@
       "weekNumber": 1,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757705308132_1019",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Sali - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 551,
+      "protein": 22,
+      "karb": 10,
+      "yag": 47
+    },
+    "foods": [
+      {
+        "foodName": "Mantarlı Yumurta (100 gram mantar, 1 yemek kaşığı tereyağı, 1 adet yumurta, tuz ve baharatlar)",
+        "originalText": "mantarlı omlet (2 adet yumurta,5 adet mantar,1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Tahin ekmeği",
+        "originalText": "tahin ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "SALI"
+    }
   }
 ]
