@@ -1024,5 +1024,47 @@
       "weekNumber": 1,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757700575829_2693",
+    "name": "1. 📋 DUDU ŞAN - 11-17 AĞUSTOS 2025 - Pazartesi̇ - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 622.2,
+      "protein": 27.2,
+      "karb": 10.9,
+      "yag": 52.2
+    },
+    "foods": [
+      {
+        "foodName": "1 dilim Fırında Kabaklı Börek",
+        "originalText": "fırında kabaklı börek (1 dilim)"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (30 gram)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz,marul + sirke, limon ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Fındık (20 adet)",
+        "originalText": "fındık (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "DUDU ŞAN",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
