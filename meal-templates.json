@@ -548,5 +548,39 @@
       "weekNumber": 5,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757709399018_1365",
+    "name": "3. 📋 NEVİN ŞAHAL - 8-14 EYLÜL 2025 - Sali - akşam. 5. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 674,
+      "protein": 47,
+      "karb": 9,
+      "yag": 50
+    },
+    "foods": [
+      {
+        "foodName": "Kıymalı Lahana / Kabak / Yeşil Fasulye Yemeği",
+        "originalText": "kıymalı kabak (100 gr kıyma ile)"
+      },
+      {
+        "foodName": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
+        "originalText": "ev yoğurdu"
+      },
+      {
+        "foodName": "Yoğurtlu çılbır",
+        "originalText": "borani (yoğurtlu ıspanak)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "NEVİN ŞAHAL",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 5,
+      "dayName": "SALI"
+    }
   }
 ]
