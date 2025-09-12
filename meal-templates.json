@@ -972,5 +972,43 @@
       "weekNumber": 6,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757709455312_9757",
+    "name": "3. 📋 GÜLDEN UĞUR - 8-14 EYLÜL 2025 - Pazartesi̇ - öğle. 6. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 659,
+      "protein": 33,
+      "karb": 8,
+      "yag": 55
+    },
+    "foods": [
+      {
+        "foodName": "100 gram Hellim Peynirli Ispanak",
+        "originalText": "hellim peynirli ıspanak/ pazı"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul, sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Çiğ badem  (20 adet)",
+        "originalText": "çiğ badem (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "GÜLDEN UĞUR",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 6,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
