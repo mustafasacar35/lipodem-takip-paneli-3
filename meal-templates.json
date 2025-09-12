@@ -82,5 +82,39 @@
       "weekNumber": 1,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757705311470_4778",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Sali - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 323,
+      "protein": 34,
+      "karb": 5,
+      "yag": 17.5
+    },
+    "foods": [
+      {
+        "foodName": "Tavuk Izgara",
+        "originalText": "hindi ya da tavuk ızgara tava"
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı"
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "SALI"
+    }
   }
 ]
