@@ -1040,5 +1040,51 @@
       "weekNumber": 6,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757709463190_373",
+    "name": "3. 📋 GÜLDEN UĞUR - 8-14 EYLÜL 2025 - Perşembe - öğle. 6. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 527,
+      "protein": 23,
+      "karb": 12,
+      "yag": 43
+    },
+    "foods": [
+      {
+        "foodName": "Mantarlı Yumurta (100 gram mantar, 1 yemek kaşığı tereyağı, 1 adet yumurta, tuz ve baharatlar)",
+        "originalText": "mantarlı omlet (1 adet yumurta, 5 adet mantar, 1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum peyniri veya kaşar peyniri (30 gram)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy) ,cherry domates (2 adet), 4-5 dal roka, 4-5 dal tere, 2 adet küçük yeşil biber"
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)"
+      },
+      {
+        "foodName": "Bitter çikolata (2 kare)",
+        "originalText": "bitter çikolata (2 kare)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "GÜLDEN UĞUR",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 6,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
