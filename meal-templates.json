@@ -806,5 +806,51 @@
       "weekNumber": 1,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "1757699705869",
+    "name": "1. 📋 ÖZLEM MAZIOĞLU - 25-31 AĞUSTOS 2025 - Pazar - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 747,
+      "protein": 45,
+      "karb": 18,
+      "yag": 55
+    },
+    "foods": [
+      {
+        "foodName": "Köfte",
+        "originalText": "köfte"
+      },
+      {
+        "foodName": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)"
+      },
+      {
+        "foodName": "Lahmacun (2 adet)",
+        "originalText": "lahmacun"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, tercihen 1/4 soğan,1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Çilek veya orman meyveleri (5 adet)",
+        "originalText": "yaban mersini, çilek ya da orman meyveleri"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ÖZLEM MAZIOĞLU",
+      "dateRange": "25-31 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "PAZAR"
+    }
   }
 ]
