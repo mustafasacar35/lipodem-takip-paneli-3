@@ -852,5 +852,67 @@
       "weekNumber": 1,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "1757699709093",
+    "name": "1. 📋 ÖZLEM MAZIOĞLU - 25-31 AĞUSTOS 2025 - Cuma - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 1230,
+      "protein": 51,
+      "karb": 18,
+      "yag": 106
+    },
+    "foods": [
+      {
+        "foodName": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+        "originalText": "haşlanmış yumurta (1 adet)"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (30 gram)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (dereotu, roka, maydanoz, marul vs + limon ve sirke ile"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      },
+      {
+        "foodName": "Maydanozlu Poğaça (2 adet)",
+        "originalText": "maydanozlu poğaça"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (30 gram)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy) + cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber + 1 tatlı kaşığı zeytinyağı"
+      },
+      {
+        "foodName": "10 adet Çiğ Badem",
+        "originalText": "çiğ badem (10 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ÖZLEM MAZIOĞLU",
+      "dateRange": "25-31 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "CUMA"
+    }
   }
 ]
