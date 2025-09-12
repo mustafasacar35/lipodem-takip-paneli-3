@@ -606,5 +606,43 @@
       "weekNumber": 1,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "1757699672682",
+    "name": "1. 📋 ZEYNEP ŞENTÜRK - 1-7 EYLÜL 2025 - Perşembe - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 568,
+      "protein": 51,
+      "karb": 10,
+      "yag": 36
+    },
+    "foods": [
+      {
+        "foodName": "Mantarlı Tavuk Sote (1 porsiyon)",
+        "originalText": "tavuk sote (150 gr tavuk fleto, 1adet orta boy domates,1 adet yeşil biber, 5 adet mantar, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "10 adet Çiğ Badem",
+        "originalText": "çiğ badem (10 adet)"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
