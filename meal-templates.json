@@ -39,48 +39,6 @@
     }
   },
   {
-    "id": "sablon_1757711604374_2",
-    "name": "Protein Zengin Öğle",
-    "type": "öğle",
-    "dietType": "High Protein",
-    "createdDate": "2024-01-02",
-    "foods": [
-      {
-        "foodName": "Tavuk Göğsü",
-        "originalText": "150g ızgara tavuk göğsü",
-        "calories": 248,
-        "protein": 46,
-        "carbs": 0,
-        "fat": 5
-      },
-      {
-        "foodName": "Quinoa",
-        "originalText": "1 kase haşlanmış quinoa",
-        "calories": 222,
-        "protein": 8,
-        "carbs": 39,
-        "fat": 4
-      },
-      {
-        "foodName": "Brokoli",
-        "originalText": "1 kase buharda pişmiş brokoli",
-        "calories": 31,
-        "protein": 3,
-        "carbs": 6,
-        "fat": 0
-      }
-    ],
-    "totalMacros": {
-      "kalori": 501,
-      "protein": 57,
-      "karb": 45,
-      "yag": 9
-    },
-    "displayName": "Protein Zengin Öğle",
-    "description": "",
-    "updatedDate": "2025-09-12"
-  },
-  {
     "id": "sablon_1757711604374_3",
     "name": "Hafif Akşam Yemeği",
     "type": "akşam",
