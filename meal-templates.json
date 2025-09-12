@@ -644,5 +644,43 @@
       "weekNumber": 1,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "1757699675636",
+    "name": "1. 📋 ZEYNEP ŞENTÜRK - 1-7 EYLÜL 2025 - Cumartesi̇ - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 460,
+      "protein": 20,
+      "karb": 5,
+      "yag": 40
+    },
+    "foods": [
+      {
+        "foodName": "Sebzeli omlet (2 adet yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)",
+        "originalText": "sebzeli omlet (1 yumurta, 5 adet mantar, 5 yaprak ıspanak, 1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 adet küçük salatalık + 1 dilim limon +1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "CUMARTESİ"
+    }
   }
 ]
