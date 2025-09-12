@@ -1608,5 +1608,43 @@
       "weekNumber": 4,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757703271605_5575",
+    "name": "5. 📋 MERYEM KARADAĞ ÜNNÜ - 11-17 AĞUSTOS 2025 - Perşembe - akşam. 4. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 452.7,
+      "protein": 22.5,
+      "karb": 9,
+      "yag": 36.3
+    },
+    "foods": [
+      {
+        "foodName": "Kabak Lazanya (1 porsiyon)",
+        "originalText": "kabak lazanya"
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)"
+      },
+      {
+        "foodName": "Kabak Çekirdeği (1 avuç)",
+        "originalText": "kabak çekirdeği (1 avuç)"
+      },
+      {
+        "foodName": "5 Adet Çilek",
+        "originalText": "çilek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERYEM KARADAĞ ÜNNÜ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 4,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
