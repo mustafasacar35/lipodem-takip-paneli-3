@@ -1148,5 +1148,59 @@
       "weekNumber": 9,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757710291792_4958",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Pazartesi̇ - akşam. 9. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 498,
+      "protein": 30,
+      "karb": 9,
+      "yag": 38
+    },
+    "foods": [
+      {
+        "foodName": "Ispanaklı ya da Pazılı Tavuk Dolması",
+        "originalText": "ispanaklı ya da pazılı tavuk dolması",
+        "calories": 247,
+        "protein": 25,
+        "carbs": 3,
+        "fat": 15
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı zeytinyağı)",
+        "calories": 158,
+        "protein": 3,
+        "carbs": 5,
+        "fat": 14
+      },
+      {
+        "foodName": "Ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)",
+        "calories": 93,
+        "protein": 2,
+        "carbs": 1,
+        "fat": 9
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
