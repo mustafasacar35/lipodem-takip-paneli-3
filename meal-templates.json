@@ -368,5 +368,67 @@
       "weekNumber": 1,
       "dayName": "CUMARTESİ"
     }
+  },
+  {
+    "id": "meal_1757705357072_268",
+    "name": "a1 öğle",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 1437,
+      "protein": 76,
+      "karb": 20,
+      "yag": 117
+    },
+    "foods": [
+      {
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "originalText": "sahanda yumurta (2 yumurta - 1 tatlı kaşığı tereyağı)"
+      },
+      {
+        "foodName": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "pastırma ya da 2 dilim hindi füme"
+      },
+      {
+        "foodName": "Tahin ekmeği",
+        "originalText": "tahin ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (roka, maydanoz, marul vs. + sirke, limon )"
+      },
+      {
+        "foodName": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
+        "originalText": "badem unlu krep (1 yumurta ve 1 çorba kaşığı badem ununu çırpın. i̇stediğiniz baharatları ekleyin1 tatlı kaşığı"
+      },
+      {
+        "foodName": "sebzeli omlet (2 adet yumurta, 2 dilim hindi füme, 5 adet mantar, 5 yaprak ıspanak, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "hindi füme (2 dilim)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (semizotu, roka, maydanoz, marul vs. + 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Çiğ badem  (20 adet)",
+        "originalText": "çiğ badem (20 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PAZAR"
+    }
   }
 ]
