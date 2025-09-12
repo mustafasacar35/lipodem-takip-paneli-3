@@ -900,5 +900,47 @@
       "weekNumber": 5,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "meal_1757709450677_1617",
+    "name": "3. 📋 GÜLDEN UĞUR - 8-14 EYLÜL 2025 - Sali - öğle. 6. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 524,
+      "protein": 22,
+      "karb": 10,
+      "yag": 44
+    },
+    "foods": [
+      {
+        "foodName": "Tavada Kaşarlı Mantar",
+        "originalText": "tavada kaşarlı mantar"
+      },
+      {
+        "foodName": "*Lor ekmeği (1 dilim)",
+        "originalText": "lor ekmeği (1 dilim)"
+      },
+      {
+        "foodName": "Çiğ badem  (20 adet)",
+        "originalText": "çiğ badem (20 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 1 adet küçük salatalık+ limon, sirke ile)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "GÜLDEN UĞUR",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 6,
+      "dayName": "SALI"
+    }
   }
 ]
