@@ -1086,5 +1086,67 @@
       "weekNumber": 6,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "meal_1757710288066_2941",
+    "name": "1. 📋 HATİCE OKTAŞ - 8-14 EYLÜL 2025 - Pazartesi̇ - öğle. 9. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 193,
+      "protein": 8,
+      "karb": 2,
+      "yag": 17
+    },
+    "foods": [
+      {
+        "foodName": "1 yumurta, 1 çorba kaşığı badem unu ile krep (1 çay kaşığı zeytinyağı tavayı yağlamak için)yumurta ve badem ununu çırpın, istediğiniz baharatları ekleyin Kısık ateşli tavayı yağlayarak arkalı önlü pişirin",
+        "originalText": "badem unlu krep (1 yumurta ve 1 çorba kaşığı badem ununu çırpın. i̇stediğiniz baharatları ekleyin1 tatlı kaşığı zeytinyağı ile tavayı",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      {
+        "foodName": "Tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "tulum / kaşar / lor peyniri (30 gram)",
+        "calories": 82,
+        "protein": 6,
+        "carbs": 1,
+        "fat": 6
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)",
+        "calories": 40,
+        "protein": 1,
+        "carbs": 0,
+        "fat": 4
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (dereotu, roka, maydanoz, marul vs.sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "calories": 71,
+        "protein": 1,
+        "carbs": 1,
+        "fat": 7
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "HATİCE OKTAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 9,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
