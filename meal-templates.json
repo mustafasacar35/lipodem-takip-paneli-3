@@ -2038,5 +2038,43 @@
       "weekNumber": 5,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "meal_1757716164515_6555",
+    "name": "1. 📋 BEYZA MUTLUBAŞ - 8-14 EYLÜL 2025 - Sali - akşam. 3. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 294,
+      "protein": 9,
+      "karb": 15,
+      "yag": 22
+    },
+    "foods": [
+      {
+        "foodName": "1 dilim Pırasalı Tava Böreği",
+        "originalText": "hindi ızgara tava",
+        "calories": 136,
+        "protein": 6,
+        "carbs": 10,
+        "fat": 8
+      },
+      {
+        "foodName": "Semizotu Salatası",
+        "originalText": "semizotu salatası (2 avuç semizotu,1 adet orta boy domates,1 adet salatalık,1 adet biber ve 1 yemek kaşığı",
+        "calories": 158,
+        "protein": 3,
+        "carbs": 5,
+        "fat": 14
+      }
+    ],
+    "sourcePatient": {
+      "name": "BEYZA MUTLUBAŞ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 3,
+      "dayName": "SALI"
+    }
   }
 ]
