@@ -15341,18 +15341,27 @@ async function yemekSil(yemekData) {
       }
     }
     
-    // Öğün kontrolü
-    if (lowerLine.includes('öğle') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('12:00'))) {
+    // Öğün kontrolü - daha geniş pattern matching
+    // Öğle öğünü için çeşitli varyasyonları kontrol et
+    if ((lowerLine.includes('öğle') || lowerLine.includes('ogle') || lowerLine.includes('öğl') || lowerLine.includes('ogl')) && 
+        (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('12:00') || lowerLine.includes('12.00') || 
+         lowerLine === 'öğle' || lowerLine === 'ogle' || lowerLine.length <= 15)) {
       console.log(`🍽️ Öğle öğünü tespit edildi: "${originalLine}" → "🍽️ Öğle (tercihen saat 12:00 civarında)"`);
       return '🍽️ Öğle (tercihen saat 12:00 civarında)';
     }
     
-    if (lowerLine.includes('akşam') && (lowerLine.includes('hava') || lowerLine.includes('tercihen') || lowerLine.includes('kararmak') || lowerLine.includes('kararınca'))) {
+    // Akşam öğünü için çeşitli varyasyonları kontrol et  
+    if ((lowerLine.includes('akşam') || lowerLine.includes('aksam') || lowerLine.includes('akş') || lowerLine.includes('aks')) && 
+        (lowerLine.includes('hava') || lowerLine.includes('tercihen') || lowerLine.includes('kararmak') || lowerLine.includes('kararınca') || lowerLine.includes('kararinca') || 
+         lowerLine === 'akşam' || lowerLine === 'aksam' || lowerLine.length <= 15)) {
       console.log(`🍽️ Akşam öğünü tespit edildi: "${originalLine}" → "🍽️ Akşam (tercihen hava kararınca)"`);
       return '🍽️ Akşam (tercihen hava kararınca)';
     }
     
-    if (lowerLine.includes('sabah') && (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('07:00') || lowerLine.includes('7:00'))) {
+    // Sabah öğünü için çeşitli varyasyonları kontrol et
+    if ((lowerLine.includes('sabah') || lowerLine.includes('saba')) && 
+        (lowerLine.includes('saat') || lowerLine.includes('tercihen') || lowerLine.includes('07:00') || lowerLine.includes('7:00') || lowerLine.includes('07.00') || lowerLine.includes('7.00') || 
+         lowerLine === 'sabah' || lowerLine === 'saba' || lowerLine.length <= 15)) {
       console.log(`🍽️ Sabah öğünü tespit edildi: "${originalLine}" → "🍽️ Sabah (tercihen saat 07:00 civarında)"`);
       return '🍽️ Sabah (tercihen saat 07:00 civarında)';
     }
