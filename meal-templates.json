@@ -824,5 +824,43 @@
       "weekNumber": 5,
       "dayName": "CUMARTESİ"
     }
+  },
+  {
+    "id": "meal_1757709422327_8377",
+    "name": "3. 📋 NEVİN ŞAHAL - 8-14 EYLÜL 2025 - Cumartesi̇ - akşam. 5. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 373,
+      "protein": 57,
+      "karb": 7,
+      "yag": 13
+    },
+    "foods": [
+      {
+        "foodName": "250 gram ızgara ya da fırında balık (çupra, levrek, alabalık vs.)",
+        "originalText": "ızgara ya da fırında balık (çupra, levrek, alabalık vs.)"
+      },
+      {
+        "foodName": "Yeşil Salata",
+        "originalText": "yeşil salata (mevsim yeşillikleri+ 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)"
+      },
+      {
+        "foodName": "Kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "NEVİN ŞAHAL",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 5,
+      "dayName": "CUMARTESİ"
+    }
   }
 ]
