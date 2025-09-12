@@ -116,5 +116,47 @@
       "weekNumber": 1,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "meal_1757705313722_2338",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Çarşamba - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 615,
+      "protein": 29,
+      "karb": 10,
+      "yag": 51
+    },
+    "foods": [
+      {
+        "foodName": "Sahanda Yumurta (1 adet), 1 tatlı kaşığı tereyağı ile",
+        "originalText": "sahanda yumurta (2 adet + 1 tatlı kaşığı tereyağı ile)"
+      },
+      {
+        "foodName": "Zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)"
+      },
+      {
+        "foodName": "tahin ekmeği ile tost (1 dilim kaşar) + kasap sucuk (50 gram)",
+        "originalText": "tahin ekmeği (2 dilim)"
+      },
+      {
+        "foodName": "Salatalık (orta boy) + Cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber",
+        "originalText": "salatalık (orta boy) + cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber"
+      },
+      {
+        "foodName": "Fındık  (10 adet)",
+        "originalText": "fındık (10 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
