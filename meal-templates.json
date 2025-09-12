@@ -196,5 +196,39 @@
       "weekNumber": 1,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "meal_1757705320380_3136",
+    "name": "2. 📋 MERAL GERÇEK - 1-7 EYLÜL 2025 - Perşembe - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 482,
+      "protein": 18,
+      "karb": 8,
+      "yag": 42
+    },
+    "foods": [
+      {
+        "foodName": "Sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "sebzeli omlet (2 yumurta, 5 adet mantar, 5 yaprak ıspanak / pazı, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler ( roka, maydanoz, marul vs. + sirke ve limon ile)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "MERAL GERÇEK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
