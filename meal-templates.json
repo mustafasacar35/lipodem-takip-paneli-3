@@ -468,5 +468,43 @@
       "weekNumber": 5,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "meal_1757709386801_75",
+    "name": "3. 📋 NEVİN ŞAHAL - 8-14 EYLÜL 2025 - Pazartesi̇ - öğle. 5. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-12",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 508,
+      "protein": 19,
+      "karb": 9,
+      "yag": 44
+    },
+    "foods": [
+      {
+        "foodName": "Haşlanmış Yumurta (1 adet) + 1 Tatlı Kaşığı Tereyağı ve Baharatlar",
+        "originalText": "haşlanmış yumurta (1 adet)"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Roka Salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy), cherry domates (2 adet), 4-5 dal roka, 4-5 dal tere, 2 adet küçük yeşil biber+1 tatlı kaşığı"
+      },
+      {
+        "foodName": "Tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum peyniri (30 gram)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "NEVİN ŞAHAL",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 5,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
