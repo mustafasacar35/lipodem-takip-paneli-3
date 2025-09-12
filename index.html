@@ -1854,6 +1854,27 @@
           <small style="color: #666; font-size: 12px;">Şablonunuza uygun diyet türünü seçebilirsiniz</small>
         </div>
 
+        <!-- Hasta Bilgileri (Kaynak) -->
+        <div id="sablonKaydetHastaBilgi" style="
+          background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%); 
+          padding: 15px; 
+          border-radius: 6px; 
+          border-left: 4px solid #28a745;
+          margin-bottom: 20px;
+          display: none;
+        ">
+          <h4 style="margin: 0 0 10px 0; color: #155724; font-size: 14px;">
+            <i class="fas fa-user-md"></i> Kaynak Hasta Bilgileri
+          </h4>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 8px; font-size: 13px;">
+            <div><strong>Hasta:</strong> <span id="sablonKaydetHastaIsim">-</span></div>
+            <div><strong>Tarih Aralığı:</strong> <span id="sablonKaydetHastaTarih">-</span></div>
+            <div><strong>Hafta:</strong> <span id="sablonKaydetHastaHafta">-</span></div>
+            <div><strong>Gün:</strong> <span id="sablonKaydetHastaGun">-</span></div>
+          </div>
+          <small style="color: #155724; font-size: 11px; opacity: 0.8;">Bu şablon yukarıdaki hastanın PDF'inden oluşturulmuştur</small>
+        </div>
+
         <!-- Şablon Özeti -->
         <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #007bff;">
           <h4 style="margin: 0 0 10px 0; color: #495057; font-size: 14px;">📊 Şablon Özeti</h4>
@@ -2818,12 +2839,10 @@
         const bytes = Uint8Array.from(atob(base64Content), c => c.charCodeAt(0));
         const decoded = new TextDecoder('utf-8').decode(bytes);
         
-        // 🕵️ DEBUG: Encoding karşılaştırması
+        // 🕵️ DEBUG: Encoding karşılaştırması (sadece önemli farklar için log)
         const simpleDecoded = atob(base64Content);
-        if (decoded !== simpleDecoded) {
-          console.log('🕵️ DEBUG: UTF-8 vs Simple decode farkı tespit edildi');
-          console.log('🕵️ DEBUG: Simple ilk 100 karakter:', simpleDecoded.substring(0, 100));
-          console.log('🕵️ DEBUG: UTF-8 ilk 100 karakter:', decoded.substring(0, 100));
+        if (decoded !== simpleDecoded && decoded.includes('İ') || decoded.includes('Ğ') || decoded.includes('Ü')) {
+          console.log('� UTF-8 decode kullanıldı (Türkçe karakter tespit edildi)');
         }
         
         return decoded;
@@ -3392,7 +3411,7 @@
         if (seciliHasta) {
           const secilenHastaIsim = document.getElementById('secilenHastaIsim');
           const secilenHastaNot = document.getElementById('secilenHastaNot');
-          if (secilenHastaIsim) secilenHastaIsim.textContent = seciliHasta.isim;
+          if (secilenHastaIsim) secilenHastaIsim.textContent = seciliHasta.isim.toUpperCase();
           if (secilenHastaNot) secilenHastaNot.textContent = seciliHasta.not || 'Not bulunmuyor';
         }
         
@@ -7060,7 +7079,7 @@ Kullanıcı 13+ hafta olan hastaları manuel olarak arşivler.
           
           // İsim kısmını ekle
           const isimSpan = document.createElement('span');
-          isimSpan.textContent = `${hasta.arsiv ? '  ' : ''}${hasta.hastaIsim}`;
+          isimSpan.textContent = `${hasta.arsiv ? '  ' : ''}${hasta.hastaIsim.toUpperCase()}`;
           isimDiv.appendChild(isimSpan);
           
           // Hafta bilgisini ekle (renkli)
@@ -12357,7 +12376,7 @@ async function updateYemekVeritabaniAnalizi() {
                 
                 // İsim ve tarihi ayır (/ işareti varsa)
                 const parts = hastaBilgisi.split('/');
-                let isimKismi = hastaBilgisi.trim();
+                let isimKismi = hastaBilgisi.trim().toUpperCase(); // Tüm metni büyük harfe çevir
                 let tarihKismi = '';
                 
                 if (parts.length >= 2) {
@@ -18769,8 +18788,8 @@ ${mesajlar.join('\n')}
       const baslik = document.getElementById('pdfModalBaslik');
       const hastaInfo = document.getElementById('pdfHastaInfo');
       
-      baslik.textContent = `${hasta.isim} - ${aktifHaftaIndex + 1}. Hafta Diyet Listesi`;
-      hastaInfo.textContent = `${hasta.isim} • ${hafta.tarihAraligi || 'Tarih bilgisi yok'} • ${aktifHaftaIndex + 1}. Hafta`;
+      baslik.textContent = `${hasta.isim.toUpperCase()} - ${aktifHaftaIndex + 1}. Hafta Diyet Listesi`;
+      hastaInfo.textContent = `${hasta.isim.toUpperCase()} • ${hafta.tarihAraligi || 'Tarih bilgisi yok'} • ${aktifHaftaIndex + 1}. Hafta`;
       content.innerHTML = pdfContent;
       
       modal.style.display = 'block';
@@ -19435,8 +19454,98 @@ ${mesajlar.join('\n')}
       
       console.log('✅ Tüm kontroller geçildi, şablon modal açılıyor...');
       
+      // Hasta bilgilerini PDF'den topla
+      let hastaBilgileri = null;
+      
+      if (seciliHasta && aktifHaftaIndex !== null && seciliHasta.haftalar[aktifHaftaIndex]) {
+        const aktifHafta = seciliHasta.haftalar[aktifHaftaIndex];
+        
+        // PDF'den isim ve tarih bilgisini al
+        let pdfIsim = null;
+        let pdfTarihAraligi = null;
+        let pdfHaftaNo = null;
+        
+        // PDF orijinal isminden bilgileri çıkar
+        if (aktifHafta.pdfOrijinalIsim) {
+          const pdfAdi = aktifHafta.pdfOrijinalIsim;
+          console.log('🔍 PDF adından bilgi çıkarılıyor:', pdfAdi);
+          
+          // "AYŞEGÜL FAROOQ 8-14 EYLÜL 2. HAFTA.pdf" formatından parse et
+          // Regex'i daha esnek yap - isim kısmında özel karakterler olabilir
+          const pdfMatch = pdfAdi.match(/^(.+?)\s+(\d{1,2}-\d{1,2}\s+[A-ZÜÇĞÖŞİ]+(?:\s+\d{4})?)\s+(\d+)\.\s*HAFTA\.pdf$/i);
+          
+          console.log('🔍 Regex test sonucu:', pdfMatch);
+          
+          if (pdfMatch) {
+            pdfIsim = pdfMatch[1].trim().toUpperCase();
+            pdfTarihAraligi = pdfMatch[2].trim().toUpperCase();
+            pdfHaftaNo = parseInt(pdfMatch[3]);
+            console.log('✅ PDF bilgileri başarıyla çıkarıldı:', { pdfIsim, pdfTarihAraligi, pdfHaftaNo });
+          } else {
+            console.log('⚠️ PDF adı beklenilen formatta değil, alternatif parse dene');
+            
+            // Alternatif parse - boşluklarla ayır
+            const parts = pdfAdi.replace('.pdf', '').split(/\s+/);
+            console.log('🔍 PDF adı parçalara ayrıldı:', parts);
+            
+            // Son kısımda "X. HAFTA" ara
+            let haftaIndex = -1;
+            for (let i = parts.length - 2; i >= 0; i--) {
+              if (parts[i].match(/^\d+\.$/) && parts[i + 1] && parts[i + 1].toUpperCase() === 'HAFTA') {
+                haftaIndex = i;
+                break;
+              }
+            }
+            
+            if (haftaIndex > 0) {
+              pdfHaftaNo = parseInt(parts[haftaIndex].replace('.', ''));
+              
+              // İsim kısmını al (hafta bilgisinden önceki kısım)
+              let isimParts = [];
+              let tarihParts = [];
+              let tarihBasladi = false;
+              
+              for (let i = 0; i < haftaIndex; i++) {
+                const part = parts[i];
+                // Tarih pattern'i kontrol et (sayı-sayı formatı)
+                if (part.match(/^\d{1,2}-\d{1,2}$/) || tarihBasladi) {
+                  tarihBasladi = true;
+                  tarihParts.push(part);
+                } else {
+                  isimParts.push(part);
+                }
+              }
+              
+              pdfIsim = isimParts.join(' ').toUpperCase();
+              pdfTarihAraligi = tarihParts.join(' ').toUpperCase();
+              
+              console.log('✅ Alternatif parse başarılı:', { pdfIsim, pdfTarihAraligi, pdfHaftaNo });
+            } else {
+              console.log('❌ Hafta bilgisi bulunamadı, varsayılan değerleri kullan');
+              pdfIsim = seciliHasta.isim;
+              pdfTarihAraligi = aktifHafta.tarihAraligi;
+              pdfHaftaNo = aktifHaftaIndex + 1;
+            }
+          }
+        } else {
+          // PDF bilgisi yoksa mevcut bilgileri kullan
+          pdfIsim = seciliHasta.isim;
+          pdfTarihAraligi = aktifHafta.tarihAraligi;
+          pdfHaftaNo = aktifHaftaIndex + 1;
+        }
+        
+        hastaBilgileri = {
+          isim: pdfIsim,
+          tarihAraligi: pdfTarihAraligi,
+          haftaNo: pdfHaftaNo,
+          gunAdi: gunAdi // Hangi günden alındığını ekle
+        };
+        
+        console.log('📋 Hasta bilgileri hazırlandı:', hastaBilgileri);
+      }
+      
       // Modal ile şablon kaydetme
-      await sablonKaydetModalAc(ogunAdi, ogunYemekleri);
+      await sablonKaydetModalAc(ogunAdi, ogunYemekleri, hastaBilgileri);
     }
     
     // GitHub'a şablon kaydetme fonksiyonu
@@ -19481,17 +19590,11 @@ ${mesajlar.join('\n')}
         
         // Türkçe karakter desteği için UTF-8 encoding
         const jsonString = JSON.stringify(mevcutIcerik, null, 2);
+        console.log('🔍 JSON string uzunluğu:', jsonString.length);
         
-        // UTF-8 string'i base64'e çevir (btoa yerine)
-        const utf8Bytes = new TextEncoder().encode(jsonString);
-        let base64String = '';
-        const chunkSize = 8192;
-        
-        for (let i = 0; i < utf8Bytes.length; i += chunkSize) {
-          const chunk = utf8Bytes.slice(i, i + chunkSize);
-          const binaryString = String.fromCharCode.apply(null, chunk);
-          base64String += btoa(binaryString);
-        }
+        // UTF-8 string'i base64'e çevir - daha güvenli yöntem
+        const base64String = btoa(unescape(encodeURIComponent(jsonString)));
+        console.log('🔍 Base64 string uzunluğu:', base64String.length);
         
         const kaydetPayload = {
           message: `Yeni öğün şablonu eklendi: ${yeniSablon.name}`,
@@ -19547,7 +19650,7 @@ ${mesajlar.join('\n')}
     // === ŞABLON KAYDETME MODAL SİSTEMİ ===
     
     // Modal'ı aç ve verilerle doldur
-    async function sablonKaydetModalAc(ogunAdi, ogunYemekleri) {
+    async function sablonKaydetModalAc(ogunAdi, ogunYemekleri, hastaBilgileri = null) {
       const modal = document.getElementById('sablonKaydetModal');
       
       // Önce diyet türlerini yükle
@@ -19560,15 +19663,56 @@ ${mesajlar.join('\n')}
         console.log('⚠️ Diyet türleri yüklenemedi:', error.message);
       }
       
-      // Öğün tipine göre otomatik numara bul
-      const ogunTipi = ogunAdi.toLowerCase();
-      const ayniTipteSablonlar = mevcutSablonlar.filter(sablon => sablon.type === ogunTipi);
-      const sonrakiNumara = ayniTipteSablonlar.length + 1;
-      const otomatikIsim = `${ogunAdi}-${sonrakiNumara}`;
+      // En büyük şablon numarasını bul - mevcut şablonlardan
+      let enBuyukNumara = 0;
+      mevcutSablonlar.forEach(sablon => {
+        if (sablon.name) {
+          // Şablon isminin başındaki numarayı çıkar
+          const numaraMatch = sablon.name.match(/^(\d+)\./);
+          if (numaraMatch) {
+            const numara = parseInt(numaraMatch[1]);
+            if (numara > enBuyukNumara) {
+              enBuyukNumara = numara;
+            }
+          }
+        }
+      });
+      
+      // Sıradaki numara
+      const yeniSablonNumarasi = enBuyukNumara + 1;
+      
+      console.log('🔢 Şablon numaralandırma:', {
+        mevcutSablonSayisi: mevcutSablonlar.length,
+        enBuyukNumara,
+        yeniSablonNumarasi
+      });
+      
+      // Öğün adını temizle - sadece öğün tipi
+      let temizOgunAdi = ogunAdi.toLowerCase();
+      if (temizOgunAdi.includes('tercihen')) {
+        if (temizOgunAdi.includes('öğle')) {
+          temizOgunAdi = 'öğle';
+        } else if (temizOgunAdi.includes('akşam')) {
+          temizOgunAdi = 'akşam';
+        }
+      }
+      
+      // Hasta bilgisi varsa yeni format kullan
+      let oncerilerinIsim = `${temizOgunAdi}-${yeniSablonNumarasi}`;
+      if (hastaBilgileri && hastaBilgileri.isim && hastaBilgileri.tarihAraligi && hastaBilgileri.haftaNo) {
+        const formatliTarih = hastaBilgileri.tarihAraligi.includes('2025') ? 
+          hastaBilgileri.tarihAraligi : `${hastaBilgileri.tarihAraligi} 2025`;
+        
+        // Gün adını da ekle - Türkçe formatında
+        const gunAdi = hastaBilgileri.gunAdi ? hastaBilgileri.gunAdi.charAt(0).toUpperCase() + hastaBilgileri.gunAdi.slice(1).toLowerCase() : '';
+        
+        // Tek satırda format - düzgün boşluklarla, gün bilgisi ile
+        oncerilerinIsim = `${yeniSablonNumarasi}. 📋 ${hastaBilgileri.isim} - ${formatliTarih} - ${gunAdi} - ${temizOgunAdi}. ${hastaBilgileri.haftaNo}. hafta`;
+      }
       
       // Formu doldur
-      document.getElementById('sablonKaydetIsim').value = otomatikIsim;
-      document.getElementById('sablonKaydetOneri').textContent = `💡 Önerilen format: ${otomatikIsim}`;
+      document.getElementById('sablonKaydetIsim').value = oncerilerinIsim;
+      document.getElementById('sablonKaydetOneri').textContent = `💡 Önerilen format: ${oncerilerinIsim}`;
       document.getElementById('sablonKaydetAciklama').textContent = `${ogunYemekleri.length} yemek kaydedilecek`;
       
       // Diyet türleri dropdown'ını doldur
@@ -19603,6 +19747,20 @@ ${mesajlar.join('\n')}
         });
       }
       
+      // Hasta bilgilerini doldur
+      const hastaBilgiDiv = document.getElementById('sablonKaydetHastaBilgi');
+      if (hastaBilgileri && hastaBilgileri.isim) {
+        // Hasta bilgileri varsa göster
+        hastaBilgiDiv.style.display = 'block';
+        document.getElementById('sablonKaydetHastaIsim').textContent = hastaBilgileri.isim.toUpperCase();
+        document.getElementById('sablonKaydetHastaTarih').textContent = hastaBilgileri.tarihAraligi || 'Tarih bilgisi yok';
+        document.getElementById('sablonKaydetHastaHafta').textContent = hastaBilgileri.haftaNo ? `${hastaBilgileri.haftaNo}. Hafta` : 'Hafta bilgisi yok';
+        document.getElementById('sablonKaydetHastaGun').textContent = hastaBilgileri.gunAdi || 'Gün bilgisi yok';
+      } else {
+        // Hasta bilgileri yoksa gizle
+        hastaBilgiDiv.style.display = 'none';
+      }
+      
       // Toplam makroları hesapla
       const toplamMakrolar = ogunYemekleri.reduce((toplam, yemek) => ({
         kalori: toplam.kalori + yemek.calories,
@@ -19621,6 +19779,7 @@ ${mesajlar.join('\n')}
       modal.ogunAdi = ogunAdi;
       modal.ogunYemekleri = ogunYemekleri;
       modal.toplamMakrolar = toplamMakrolar;
+      modal.hastaBilgileri = hastaBilgileri; // Hasta bilgilerini de sakla
       
       // Modal'ı göster
       modal.style.display = 'block';
@@ -19666,7 +19825,14 @@ ${mesajlar.join('\n')}
         foods: modal.ogunYemekleri.map(yemek => ({
           foodName: yemek.foodName,
           originalText: yemek.originalText
-        }))
+        })),
+        // Hasta bilgilerini ekle
+        sourcePatient: modal.hastaBilgileri ? {
+          name: modal.hastaBilgileri.isim,
+          dateRange: modal.hastaBilgileri.tarihAraligi,
+          weekNumber: modal.hastaBilgileri.haftaNo,
+          dayName: modal.hastaBilgileri.gunAdi
+        } : null
       };
       
       console.log('✅ Şablon hazırlandı:', yeniSablon);
@@ -19756,6 +19922,35 @@ ${mesajlar.join('\n')}
             console.log(`⚠️ TOPLAM ${bozukSablonSayisi} adet bozuk şablon tespit edildi!`);
             console.log('💡 Bu şablonları silip yeniden oluşturmanızı öneririz.');
           }
+          
+          // Şablonları tarihe göre sırala (eskiden yeniye)
+          mevcutSablonlar.sort((a, b) => {
+            const dateA = new Date(a.createdDate || '2024-01-01');
+            const dateB = new Date(b.createdDate || '2024-01-01');
+            return dateA - dateB;
+          });
+          
+          // Otomatik numaralandırma uygula
+          mevcutSablonlar.forEach((sablon, index) => {
+            const yeniNumara = index + 1;
+            
+            // Eğer şablon isminde numara varsa, güncelle
+            if (sablon.name) {
+              // Mevcut numarayı kaldır ve yeni numara ekle
+              let temizIsim = sablon.name;
+              
+              // Başındaki numarayı kaldır: "5. 📋 HASTA ADI..." → "📋 HASTA ADI..."
+              temizIsim = temizIsim.replace(/^\d+\.\s*/, '');
+              
+              // Yeni numara ekle
+              sablon.displayName = `${yeniNumara}. ${temizIsim}`;
+              
+              console.log(`🔢 Şablon ${index + 1}: "${sablon.name}" → "${sablon.displayName}"`);
+            } else {
+              sablon.displayName = sablon.name || `Şablon ${yeniNumara}`;
+            }
+          });
+          
           filtrelenmisSablonlar = [...mevcutSablonlar];
           
           console.log('✅ Şablonlar yüklendi:', mevcutSablonlar.length, 'adet');
@@ -19829,17 +20024,20 @@ ${mesajlar.join('\n')}
             
             <!-- Şablon Başlığı -->
             <div style="padding: 15px 20px; border-bottom: 1px solid #f0f0f0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                <div>
-                  <h4 style="margin: 0 0 5px 0; color: #495057; font-size: 16px;">${sablon.name}</h4>
-                  <div style="display: flex; align-items: center; gap: 15px; font-size: 12px; color: #6c757d;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;">
+                <!-- Sol Taraf: Başlık ve Bilgiler -->
+                <div style="flex: 1;">
+                  <h4 style="margin: 0 0 8px 0; color: #495057; font-size: 15px; line-height: 1.3;">${sablon.displayName || sablon.name}</h4>
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 12px; color: #6c757d;">
                     <span><i class="fas fa-utensils"></i> ${sablon.type}</span>
                     <span><i class="fas fa-calendar"></i> ${sablon.createdDate}</span>
                     <span><i class="fas fa-list"></i> ${yemekSayisi} yemek${kaloriInfo}</span>
                     ${sablon.dietTypeName ? `<span><i class="fas fa-chart-pie"></i> ${sablon.dietTypeName}</span>` : ''}
                   </div>
                 </div>
-                <div style="display: flex; gap: 8px;">
+                
+                <!-- Sağ Taraf: Butonlar -->
+                <div style="display: flex; gap: 6px; flex-shrink: 0;">
                   <button onclick="sablonDuzenle('${sablon.id}')" title="Düzenle" style="
                     padding: 6px 10px; 
                     background: #007bff; 
