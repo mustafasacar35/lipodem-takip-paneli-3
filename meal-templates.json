@@ -842,5 +842,67 @@
       "weekNumber": 1,
       "dayName": "CUMARTESİ"
     }
+  },
+  {
+    "id": "1757784390049",
+    "name": "öğle-3",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 539,
+      "protein": 16,
+      "karb": 22,
+      "yag": 43
+    },
+    "foods": [
+      {
+        "foodName": "peynirli biber dolması (2 adet)",
+        "originalText": "peynirli biber dolması",
+        "calories": 155,
+        "protein": 9,
+        "carbs": 5,
+        "fat": 11
+      },
+      {
+        "foodName": "roka salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy) + cherry domates (2 adet)+ 4-5 dal maydanoz+ 2 adet küçük yeşil biber + 1 yemek kaşığı zeytinyağı ile",
+        "calories": 150,
+        "protein": 2,
+        "carbs": 4,
+        "fat": 14
+      },
+      {
+        "foodName": "fındık (20 adet)",
+        "originalText": "fındık (20 adet)",
+        "calories": 128,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 12
+      },
+      {
+        "foodName": "karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr",
+        "calories": 66,
+        "protein": 1,
+        "carbs": 11,
+        "fat": 2
+      },
+      {
+        "foodName": "zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)",
+        "calories": 40,
+        "protein": 1,
+        "carbs": 0,
+        "fat": 4
+      }
+    ],
+    "sourcePatient": {
+      "name": "ŞEFİKE BAY 4-1İ AĞUSTOS",
+      "dateRange": "",
+      "weekNumber": 6,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
