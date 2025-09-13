@@ -904,5 +904,43 @@
       "weekNumber": 6,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "1757784401667",
+    "name": "akşam-3",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 534,
+      "protein": 24,
+      "karb": 42,
+      "yag": 30
+    },
+    "foods": [
+      {
+        "foodName": "nohut yemeği (1 su bardağı nohut ile)",
+        "originalText": "1/2 su bardağı nohut + 100 gr kırmızı et ya da tavuk eti ile nohut yemeği",
+        "calories": 260,
+        "protein": 14,
+        "carbs": 33,
+        "fat": 8
+      },
+      {
+        "foodName": "yoğurtlu enginar",
+        "originalText": "yoğurtlu enginar ya da kereviz salatası",
+        "calories": 274,
+        "protein": 10,
+        "carbs": 9,
+        "fat": 22
+      }
+    ],
+    "sourcePatient": {
+      "name": "EMİNE KAVALA 4-1İ AĞUSTOS",
+      "dateRange": "",
+      "weekNumber": 8,
+      "dayName": "SALI"
+    }
   }
 ]
