@@ -618,5 +618,59 @@
       "weekNumber": 19,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "1757763876892",
+    "name": "1. 📋 ESİN KARAKUŞ - 11-17 AĞUSTOS 2025 - Sali - akşam. 19. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 363,
+      "protein": 23,
+      "karb": 16,
+      "yag": 23
+    },
+    "foods": [
+      {
+        "foodName": "köfte",
+        "originalText": "köfte",
+        "calories": 242,
+        "protein": 20,
+        "carbs": 0,
+        "fat": 18
+      },
+      {
+        "foodName": "yeşil salata",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, sirke, limon ve 1 tatlı kaşığı zeytinyağı ile)",
+        "calories": 55,
+        "protein": 2,
+        "carbs": 5,
+        "fat": 3
+      },
+      {
+        "foodName": "karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr",
+        "calories": 66,
+        "protein": 1,
+        "carbs": 11,
+        "fat": 2
+      },
+      {
+        "foodName": "turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "ESİN KARAKUŞ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 19,
+      "dayName": "SALI"
+    }
   }
 ]
