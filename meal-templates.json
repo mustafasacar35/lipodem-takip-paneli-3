@@ -1120,5 +1120,67 @@
       "weekNumber": 32,
       "dayName": "ÇARŞAMBA"
     }
+  },
+  {
+    "id": "1757784433114",
+    "name": "öğle-3",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 629,
+      "protein": 28,
+      "karb": 10,
+      "yag": 53
+    },
+    "foods": [
+      {
+        "foodName": "2 adet lupin unlu poğaça (veya 4 adet lorlu poğaça)",
+        "originalText": "lupin unlu poğaça (veya 3 adet lorlu poğaça)",
+        "calories": 208,
+        "protein": 13,
+        "carbs": 3,
+        "fat": 16
+      },
+      {
+        "foodName": "tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (50 gram)",
+        "calories": 138,
+        "protein": 10,
+        "carbs": 2,
+        "fat": 10
+      },
+      {
+        "foodName": "zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)",
+        "calories": 40,
+        "protein": 1,
+        "carbs": 0,
+        "fat": 4
+      },
+      {
+        "foodName": "roka salatası (yarım bağ roka, 5 fındık turp, 3 cherry domates, yarım kırmızı soğan + limon, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "salatalık (orta boy) ,cherry domates (2 adet), 4-5 dal roka, 4-5 dal tere, 2 adet küçük yeşil biber",
+        "calories": 150,
+        "protein": 2,
+        "carbs": 4,
+        "fat": 14
+      },
+      {
+        "foodName": "ceviz (3 adet)",
+        "originalText": "ceviz (3 adet)",
+        "calories": 93,
+        "protein": 2,
+        "carbs": 1,
+        "fat": 9
+      }
+    ],
+    "sourcePatient": {
+      "name": "EMİNE KAVALA 4-1İ AĞUSTOS",
+      "dateRange": "",
+      "weekNumber": 8,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
