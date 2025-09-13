@@ -1050,5 +1050,75 @@
       "weekNumber": 32,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "1757784414980",
+    "name": "öğle-3",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 731,
+      "protein": 31,
+      "karb": 10,
+      "yag": 63
+    },
+    "foods": [
+      {
+        "foodName": "hindistancevizi unlu ispanaklı muffin (2 adet)",
+        "originalText": "hindistancevizi unlu ispanaklı muffin",
+        "calories": 293,
+        "protein": 14,
+        "carbs": 3,
+        "fat": 25
+      },
+      {
+        "foodName": "tulum / kaşar / lor peyniri (30 gram)",
+        "originalText": "tulum / kaşar / lor peyniri (30 gram)",
+        "calories": 82,
+        "protein": 6,
+        "carbs": 1,
+        "fat": 6
+      },
+      {
+        "foodName": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (dereotu, roka, maydanoz, marul, sirke + limon ve 1 yemek kaşığı zeytinyağı ile)",
+        "calories": 83,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 7
+      },
+      {
+        "foodName": "zeytin (5 adet)",
+        "originalText": "zeytin (5 adet)",
+        "calories": 40,
+        "protein": 1,
+        "carbs": 0,
+        "fat": 4
+      },
+      {
+        "foodName": "pita ekmeği",
+        "originalText": "pita ekmeği (1 adet)",
+        "calories": 105,
+        "protein": 4,
+        "carbs": 2,
+        "fat": 9
+      },
+      {
+        "foodName": "fındık (20 adet)",
+        "originalText": "fındık (20 adet)",
+        "calories": 128,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 12
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP NUR ÖZKAYA 4-1İ AĞUSTOS",
+      "dateRange": "",
+      "weekNumber": 32,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
