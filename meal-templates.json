@@ -1354,5 +1354,50 @@
       "weekNumber": 8,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "1757784458838",
+    "name": "akşam-3",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 566,
+      "protein": 44,
+      "karb": 3,
+      "yag": 42
+    },
+    "foods": [
+      {
+        "foodName": "fırında tavuk kanat",
+        "originalText": "fırında tavuk pirzola ya da kanat",
+        "calories": 398,
+        "protein": 40,
+        "carbs": 1,
+        "fat": 26
+      },
+      {
+        "foodName": "zeytinyağlı deniz börülcesi",
+        "originalText": "zeytinyağlı deniz börülcesi ya da semizotu salata",
+        "calories": 168,
+        "protein": 4,
+        "carbs": 2,
+        "fat": 16
+      },
+      {
+        "foodName": "turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "BAHRİYE YEŞİM DEMİR",
+      "weekNumber": 1,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
