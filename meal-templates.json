@@ -742,5 +742,59 @@
       "weekNumber": 2,
       "dayName": "PAZAR"
     }
+  },
+  {
+    "id": "1757784374279",
+    "name": "3. 📋 RANA NUR GÜNDÜZ - 21-24 AĞUSTOS 2025 - Perşembe - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 453,
+      "protein": 31,
+      "karb": 8,
+      "yag": 33
+    },
+    "foods": [
+      {
+        "foodName": "patlıcan kebabı",
+        "originalText": "patlıcan kebabı (kabak ile yapabilirsiniz)",
+        "calories": 388,
+        "protein": 20,
+        "carbs": 5,
+        "fat": 32
+      },
+      {
+        "foodName": "yoğurt 2 yemek kaşığı ev yoğurdu",
+        "originalText": "yoğurt ( 2 yemek kaşığı ev yoğurdu)",
+        "calories": 21,
+        "protein": 1,
+        "carbs": 2,
+        "fat": 1
+      },
+      {
+        "foodName": "ev yapımı turşu",
+        "originalText": "ev yapımı turşu",
+        "calories": 4,
+        "protein": 0,
+        "carbs": 1,
+        "fat": 0
+      },
+      {
+        "foodName": "kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)",
+        "calories": 40,
+        "protein": 10,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "RANA NUR GÜNDÜZ",
+      "dateRange": "21-24 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "PERŞEMBE"
+    }
   }
 ]
