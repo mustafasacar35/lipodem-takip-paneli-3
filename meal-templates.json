@@ -564,5 +564,59 @@
       "weekNumber": 1,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "1757763869122",
+    "name": "1. 📋 ESİN KARAKUŞ - 11-17 AĞUSTOS 2025 - Pazartesi̇ - öğle. 19. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 287,
+      "protein": 14,
+      "karb": 15,
+      "yag": 19
+    },
+    "foods": [
+      {
+        "foodName": "sucuklu yumurta (60 gram kasap sucuk  + 1 yumurta ile)",
+        "originalText": "sucuklu yumurta (60 gram kasap sucuk + 1 yumurta ile)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      {
+        "foodName": "tulum /kaşar peyniri (50 gram)",
+        "originalText": "tulum / kaşar peyniri (30 gram)",
+        "calories": 138,
+        "protein": 10,
+        "carbs": 2,
+        "fat": 10
+      },
+      {
+        "foodName": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz + limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "yeşillikler (4 yaprak marul, 4-5 yaprak roka, 4-5 dal maydanoz, limon ve sirke +1 tatlı kaşığı zeytinyağı ile)",
+        "calories": 83,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 7
+      },
+      {
+        "foodName": "karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr",
+        "calories": 66,
+        "protein": 1,
+        "carbs": 11,
+        "fat": 2
+      }
+    ],
+    "sourcePatient": {
+      "name": "ESİN KARAKUŞ",
+      "dateRange": "11-17 AĞUSTOS",
+      "weekNumber": 19,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
