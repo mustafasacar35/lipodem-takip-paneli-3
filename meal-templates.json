@@ -526,5 +526,43 @@
       "weekNumber": 4,
       "dayName": "PAZARTESİ"
     }
+  },
+  {
+    "id": "1757763366548",
+    "name": "1. 📋 PAKİZE AKÇAY - 8-14 EYLÜL 2025 - Pazartesi̇ - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 543,
+      "protein": 24,
+      "karb": 6,
+      "yag": 47
+    },
+    "foods": [
+      {
+        "foodName": "köfte",
+        "originalText": "köfte"
+      },
+      {
+        "foodName": "kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)",
+        "originalText": "kabak sote (1 adet kabak ve 1 yemek kaşığı zeytinyağı ile)"
+      },
+      {
+        "foodName": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "toz kollajen 1 ölçek",
+        "originalText": "toz kollajen 1 ölçek"
+      }
+    ],
+    "sourcePatient": {
+      "name": "PAKİZE AKÇAY",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
