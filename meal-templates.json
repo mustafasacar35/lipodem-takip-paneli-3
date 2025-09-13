@@ -942,5 +942,67 @@
       "weekNumber": 8,
       "dayName": "SALI"
     }
+  },
+  {
+    "id": "1757784407713",
+    "name": "akşam-3",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 560,
+      "protein": 32,
+      "karb": 6,
+      "yag": 44
+    },
+    "foods": [
+      {
+        "foodName": "kırmızı et ya da tavuklu bamya yemeği (100 gram et ile)",
+        "originalText": "tavuklu bamya yemeği",
+        "calories": 300,
+        "protein": 25,
+        "carbs": 2,
+        "fat": 20
+      },
+      {
+        "foodName": "mevsim salata (marul, dereotu, roka, kırmızı lahana, turp + 1 yemek kaşığı zeytinyağı)",
+        "originalText": "mevsim salata (marul, dereotu, roka, kırmızı lahana + 1 yemek kaşığı zeytinyağı)",
+        "calories": 155,
+        "protein": 3,
+        "carbs": 2,
+        "fat": 15
+      },
+      {
+        "foodName": "pita ekmeği",
+        "originalText": "pita ekmeği (1 adet)",
+        "calories": 105,
+        "protein": 4,
+        "carbs": 2,
+        "fat": 9
+      },
+      {
+        "foodName": "turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      },
+      {
+        "foodName": "toz kollajen 1 ölçek",
+        "originalText": "toz kollajen 1 ölçek",
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP NUR ÖZKAYA 4-1İ AĞUSTOS",
+      "dateRange": "",
+      "weekNumber": 32,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
