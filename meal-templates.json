@@ -796,5 +796,51 @@
       "weekNumber": 1,
       "dayName": "PERŞEMBE"
     }
+  },
+  {
+    "id": "1757784382242",
+    "name": "3. 📋 SEDA SÜRGİT - 9-17 AĞUSTOS 2025 - Cumartesi̇ - akşam. 1. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 517,
+      "protein": 45,
+      "karb": 19,
+      "yag": 29
+    },
+    "foods": [
+      {
+        "foodName": "kıymalı lahana / kabak / yeşil fasulye yemeği",
+        "originalText": "kıymalı kabak/ ispanak yemeği",
+        "calories": 365,
+        "protein": 30,
+        "carbs": 5,
+        "fat": 25
+      },
+      {
+        "foodName": "yoğurtlu salatalık mezesi",
+        "originalText": "yoğurtlu salatalık mezesi",
+        "calories": 112,
+        "protein": 5,
+        "carbs": 14,
+        "fat": 4
+      },
+      {
+        "foodName": "kollajen (1 ölçek 10 gram)",
+        "originalText": "kollajen (1 ölçek 10 gram)",
+        "calories": 40,
+        "protein": 10,
+        "carbs": 0,
+        "fat": 0
+      }
+    ],
+    "sourcePatient": {
+      "name": "SEDA SÜRGİT",
+      "dateRange": "9-17 AĞUSTOS",
+      "weekNumber": 1,
+      "dayName": "CUMARTESİ"
+    }
   }
 ]
