@@ -488,5 +488,43 @@
       "weekNumber": 2,
       "dayName": "PAZAR SUSAMLI OMLET TULUM PEYNIRI VEYA KAŞAR PEYNIRI (50 GRAM)"
     }
+  },
+  {
+    "id": "1757757942651",
+    "name": "1. 📋 RANA NUR GÜNDÜZ - 8-14 EYLÜL 2025 - Pazartesi̇ - akşam. 4. hafta",
+    "type": "akşam (tercihen hava kararınca)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 488,
+      "protein": 39,
+      "karb": 11,
+      "yag": 32
+    },
+    "foods": [
+      {
+        "foodName": "*Mantarlı tavuk sote",
+        "originalText": "mantarlı tavuk sote"
+      },
+      {
+        "foodName": "Yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)",
+        "originalText": "yeşil salata (marul, dereotu, roka, kırmızı lahana, 1 yemek kaşığı zeytinyağı)"
+      },
+      {
+        "foodName": "Yoğurt 2 yemek kaşığı Ev Yoğurdu",
+        "originalText": "yoğurt ( 2 yemek kaşığı ev yoğurdu)"
+      },
+      {
+        "foodName": "Turşu (organik, ev yapımı)",
+        "originalText": "turşu (organik, ev yapımı)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "RANA NUR GÜNDÜZ",
+      "dateRange": "8-14 EYLÜL",
+      "weekNumber": 4,
+      "dayName": "PAZARTESİ"
+    }
   }
 ]
