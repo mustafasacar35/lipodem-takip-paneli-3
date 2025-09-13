@@ -76,5 +76,47 @@
       "karbonhidrat": 45,
       "yag": 9
     }
+  },
+  {
+    "id": "meal_1757753317363_9712",
+    "name": "1. 📋 ZEYNEP ŞENTÜRK - 1-7 EYLÜL 2025 - Çarşamba - öğle. 1. hafta",
+    "type": "öğle (tercihen saat 12:00 civarında)",
+    "createdDate": "2025-09-13",
+    "dietType": null,
+    "dietTypeName": null,
+    "totalMacros": {
+      "kalori": 597,
+      "protein": 16,
+      "karb": 32,
+      "yag": 45
+    },
+    "foods": [
+      {
+        "foodName": "Fırında Domates Soslu Sebze Kızartması",
+        "originalText": "fırında domates soslu sebze kızartması (1 kabak, 3 yeşil biber, 1 adet orta boy patlıcan + üzerine 1 adet domates ve 1 diş"
+      },
+      {
+        "foodName": "Zeytin (10 adet)",
+        "originalText": "zeytin (10 adet)"
+      },
+      {
+        "foodName": "Mevsim Yeşillikleri (dereotu, roka, maydanoz, sirke, limon +1 tatlı kaşığı zeytinyağı ile)",
+        "originalText": "mevsim yeşillikleri (4-5 dal dereotu,4-5 dal roka,4-5 dal maydanoz + 1 dilim limon ile"
+      },
+      {
+        "foodName": "Karabuğday ekmeği 1 dilim 25 gr",
+        "originalText": "karabuğday ekmeği 1 dilim 25 gr"
+      },
+      {
+        "foodName": "Ceviz (5 adet)",
+        "originalText": "ceviz (5 adet)"
+      }
+    ],
+    "sourcePatient": {
+      "name": "ZEYNEP ŞENTÜRK",
+      "dateRange": "1-7 EYLÜL",
+      "weekNumber": 1,
+      "dayName": "ÇARŞAMBA"
+    }
   }
 ]
